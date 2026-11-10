@@ -5,15 +5,13 @@ TOP = chip_top
 
 PDK_ROOT ?= $(MAKEFILE_DIR)/gf180mcu
 PDK ?= gf180mcuD
-PDK_COMMIT ?= f6eeac7dad085ffcc829ccfd721f7b4ce39edcf7
-
-TILE_LIBRARY ?= classic
-FABRIC ?= classic_fabric_wsrun2
+PDK_COMMIT ?= 5740c4a81c42f9fe4af5ef2ee258a99151053d28
 
 # Available SCL libraries:
 # gf180mcu_as_sc_mcu7t3v3
 # gf180mcu_fd_sc_mcu7t5v0
 # gf180mcu_fd_sc_mcu9t5v0
+# gf180mcu_ocd_sc_rt12t3v3
 # gf180mcu_osu_sc_gp9t3v3 (broken)
 # gf180mcu_osu_sc_gp12t3v3 (broken)
 
@@ -79,7 +77,7 @@ all: librelane ## Build the project (runs LibreLane)
 .PHONY: all
 
 $(PDK_ROOT)/ciel/gf180mcu/versions/$(PDK_COMMIT)/$(PDK):
-	ciel enable $(PDK_COMMIT) --pdk-root $(PDK_ROOT) --pdk-family $(PDK) --include-libraries all
+	ciel enable $(PDK_COMMIT) --pdk-root $(PDK_ROOT) --pdk $(PDK) --include-libraries all
 
 clone-pdk: $(PDK_ROOT)/ciel/gf180mcu/versions/$(PDK_COMMIT)/$(PDK) ## Clone the gf180mcu PDK
 .PHONY: clone-pdk

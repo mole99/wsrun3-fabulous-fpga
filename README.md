@@ -1,6 +1,6 @@
 # gf180mcu FABulous FPGA (3.3V)
 
-This is an improved version of my FABulous FPGA on wafer.space run 1. Notably, it uses 3.3V standard cells and SRAM macros, as well as 3.3V/5V compatible I/O cells. 
+This is an improved version of my FABulous FPGA on wafer.space run 1 and 2. Notably, it uses 3.3V standard cells and SRAM macros, as well as 3.3V/5V compatible I/O cells. 
 
 ![GF180MCU FABulous FPGA (3.3V)](img/chip_top_gf180mcu_custom_white.png)
 

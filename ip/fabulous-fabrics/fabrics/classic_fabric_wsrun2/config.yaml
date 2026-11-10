@@ -59,6 +59,8 @@ pdk::sky130*:
 pdk::gf180mcu*:
     # Routing
     RT_MAX_LAYER: Metal4
+    
+    FABULOUS_TIMING_MODEL: PHYSICAL
 
 pdk::ihp-sg13*:
     # Routing
