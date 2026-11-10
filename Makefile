@@ -7,6 +7,8 @@ PDK_ROOT ?= $(MAKEFILE_DIR)/gf180mcu
 PDK ?= gf180mcuD
 PDK_COMMIT ?= 5740c4a81c42f9fe4af5ef2ee258a99151053d28
 
+TILE_LIBRARY ?= classic
+
 # Available SCL libraries:
 # gf180mcu_as_sc_mcu7t3v3
 # gf180mcu_fd_sc_mcu7t5v0
