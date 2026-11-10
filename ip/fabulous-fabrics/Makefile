@@ -1,4 +1,5 @@
 PDK ?= gf180mcuD
+SCL ?= gf180mcu_as_sc_mcu7t3v3
 
 # Get the fabric names
 FABRICS :=  $(patsubst fabrics/%,%,$(wildcard fabrics/*)) 
@@ -11,15 +12,15 @@ all: $(FABRICS)
 .PHONY: all
 
 $(FABRICS):
-	librelane --pdk ${PDK} fabrics/$@/config.yaml --save-views-to fabrics/$@/macro/${PDK}/
+	librelane --pdk ${PDK} --scl ${SCL} fabrics/$@/config.yaml --save-views-to fabrics/$@/macro/${PDK}/
 .PHONY: $(FABRICS)
 
 $(FABRICS_OPENROAD):
-	librelane --pdk ${PDK} fabrics/$(subst -openroad,,$@)/config.yaml --last-run --flow OpenInOpenROAD
+	librelane --pdk ${PDK} --scl ${SCL} fabrics/$(subst -openroad,,$@)/config.yaml --last-run --flow OpenInOpenROAD
 .PHONY: $(FABRICS_OPENROAD)
 
 $(FABRICS_KLAYOUT):
-	librelane --pdk ${PDK} fabrics/$(subst -klayout,,$@)/config.yaml --last-run --flow OpenInKLayout
+	librelane --pdk ${PDK} --scl ${SCL} fabrics/$(subst -klayout,,$@)/config.yaml --last-run --flow OpenInKLayout
 .PHONY: $(FABRICS_KLAYOUT)
 
 $(FABRICS_COPY):

@@ -8,6 +8,9 @@ build
 macro/
 runs/
 
+# explicitly allow nextpnr model
+!user_designs/fabrics/*/macro/
+
 *.json
 *.png
 *.svg

@@ -1216,7 +1216,7 @@ wire[7:0] Tile_X1Y1_W2BEG;
 wire[7:0] Tile_X1Y1_W2BEGb;
 wire[15:0] Tile_X1Y1_WW4BEG;
 wire[11:0] Tile_X1Y1_W6BEG;
-wire[0:0] Tile_X1Y1_CO;
+wire[0:0] Tile_X1Y1_Co;
 wire[3:0] Tile_X2Y1_N_GBUF_BEG;
 wire[3:0] Tile_X2Y1_N1BEG;
 wire[7:0] Tile_X2Y1_N2BEG;
@@ -1238,7 +1238,7 @@ wire[7:0] Tile_X2Y1_W2BEG;
 wire[7:0] Tile_X2Y1_W2BEGb;
 wire[15:0] Tile_X2Y1_WW4BEG;
 wire[11:0] Tile_X2Y1_W6BEG;
-wire[0:0] Tile_X2Y1_CO;
+wire[0:0] Tile_X2Y1_Co;
 wire[3:0] Tile_X3Y1_N_GBUF_BEG;
 wire[3:0] Tile_X3Y1_N1BEG;
 wire[7:0] Tile_X3Y1_N2BEG;
@@ -1281,7 +1281,7 @@ wire[7:0] Tile_X4Y1_W2BEG;
 wire[7:0] Tile_X4Y1_W2BEGb;
 wire[15:0] Tile_X4Y1_WW4BEG;
 wire[11:0] Tile_X4Y1_W6BEG;
-wire[0:0] Tile_X4Y1_CO;
+wire[0:0] Tile_X4Y1_Co;
 wire[3:0] Tile_X5Y1_N_GBUF_BEG;
 wire[3:0] Tile_X5Y1_N1BEG;
 wire[7:0] Tile_X5Y1_N2BEG;
@@ -1303,7 +1303,7 @@ wire[7:0] Tile_X5Y1_W2BEG;
 wire[7:0] Tile_X5Y1_W2BEGb;
 wire[15:0] Tile_X5Y1_WW4BEG;
 wire[11:0] Tile_X5Y1_W6BEG;
-wire[0:0] Tile_X5Y1_CO;
+wire[0:0] Tile_X5Y1_Co;
 wire[3:0] Tile_X6Y1_N_GBUF_BEG;
 wire[3:0] Tile_X6Y1_N1BEG;
 wire[7:0] Tile_X6Y1_N2BEG;
@@ -1325,7 +1325,7 @@ wire[7:0] Tile_X6Y1_W2BEG;
 wire[7:0] Tile_X6Y1_W2BEGb;
 wire[15:0] Tile_X6Y1_WW4BEG;
 wire[11:0] Tile_X6Y1_W6BEG;
-wire[0:0] Tile_X6Y1_CO;
+wire[0:0] Tile_X6Y1_Co;
 wire[3:0] Tile_X7Y1_N_GBUF_BEG;
 wire[3:0] Tile_X7Y1_N1BEG;
 wire[7:0] Tile_X7Y1_N2BEG;
@@ -1347,7 +1347,7 @@ wire[7:0] Tile_X7Y1_W2BEG;
 wire[7:0] Tile_X7Y1_W2BEGb;
 wire[15:0] Tile_X7Y1_WW4BEG;
 wire[11:0] Tile_X7Y1_W6BEG;
-wire[0:0] Tile_X7Y1_CO;
+wire[0:0] Tile_X7Y1_Co;
 wire[3:0] Tile_X8Y1_N_GBUF_BEG;
 wire[3:0] Tile_X8Y1_W1BEG;
 wire[7:0] Tile_X8Y1_W2BEG;
@@ -1382,7 +1382,7 @@ wire[7:0] Tile_X1Y2_W2BEG;
 wire[7:0] Tile_X1Y2_W2BEGb;
 wire[15:0] Tile_X1Y2_WW4BEG;
 wire[11:0] Tile_X1Y2_W6BEG;
-wire[0:0] Tile_X1Y2_CO;
+wire[0:0] Tile_X1Y2_Co;
 wire[3:0] Tile_X2Y2_N_GBUF_BEG;
 wire[3:0] Tile_X2Y2_N1BEG;
 wire[7:0] Tile_X2Y2_N2BEG;
@@ -1404,7 +1404,7 @@ wire[7:0] Tile_X2Y2_W2BEG;
 wire[7:0] Tile_X2Y2_W2BEGb;
 wire[15:0] Tile_X2Y2_WW4BEG;
 wire[11:0] Tile_X2Y2_W6BEG;
-wire[0:0] Tile_X2Y2_CO;
+wire[0:0] Tile_X2Y2_Co;
 wire[3:0] Tile_X3Y2_N_GBUF_BEG;
 wire[3:0] Tile_X3Y2_N1BEG;
 wire[7:0] Tile_X3Y2_N2BEG;
@@ -1447,7 +1447,7 @@ wire[7:0] Tile_X4Y2_W2BEG;
 wire[7:0] Tile_X4Y2_W2BEGb;
 wire[15:0] Tile_X4Y2_WW4BEG;
 wire[11:0] Tile_X4Y2_W6BEG;
-wire[0:0] Tile_X4Y2_CO;
+wire[0:0] Tile_X4Y2_Co;
 wire[3:0] Tile_X5Y2_N_GBUF_BEG;
 wire[3:0] Tile_X5Y2_N1BEG;
 wire[7:0] Tile_X5Y2_N2BEG;
@@ -1469,7 +1469,7 @@ wire[7:0] Tile_X5Y2_W2BEG;
 wire[7:0] Tile_X5Y2_W2BEGb;
 wire[15:0] Tile_X5Y2_WW4BEG;
 wire[11:0] Tile_X5Y2_W6BEG;
-wire[0:0] Tile_X5Y2_CO;
+wire[0:0] Tile_X5Y2_Co;
 wire[3:0] Tile_X6Y2_N_GBUF_BEG;
 wire[3:0] Tile_X6Y2_N1BEG;
 wire[7:0] Tile_X6Y2_N2BEG;
@@ -1491,7 +1491,7 @@ wire[7:0] Tile_X6Y2_W2BEG;
 wire[7:0] Tile_X6Y2_W2BEGb;
 wire[15:0] Tile_X6Y2_WW4BEG;
 wire[11:0] Tile_X6Y2_W6BEG;
-wire[0:0] Tile_X6Y2_CO;
+wire[0:0] Tile_X6Y2_Co;
 wire[3:0] Tile_X7Y2_N_GBUF_BEG;
 wire[3:0] Tile_X7Y2_N1BEG;
 wire[7:0] Tile_X7Y2_N2BEG;
@@ -1513,7 +1513,7 @@ wire[7:0] Tile_X7Y2_W2BEG;
 wire[7:0] Tile_X7Y2_W2BEGb;
 wire[15:0] Tile_X7Y2_WW4BEG;
 wire[11:0] Tile_X7Y2_W6BEG;
-wire[0:0] Tile_X7Y2_CO;
+wire[0:0] Tile_X7Y2_Co;
 wire[3:0] Tile_X8Y2_N_GBUF_BEG;
 wire[3:0] Tile_X8Y2_W1BEG;
 wire[7:0] Tile_X8Y2_W2BEG;
@@ -1548,7 +1548,7 @@ wire[7:0] Tile_X1Y3_W2BEG;
 wire[7:0] Tile_X1Y3_W2BEGb;
 wire[15:0] Tile_X1Y3_WW4BEG;
 wire[11:0] Tile_X1Y3_W6BEG;
-wire[0:0] Tile_X1Y3_CO;
+wire[0:0] Tile_X1Y3_Co;
 wire[3:0] Tile_X2Y3_N_GBUF_BEG;
 wire[3:0] Tile_X2Y3_N1BEG;
 wire[7:0] Tile_X2Y3_N2BEG;
@@ -1570,7 +1570,7 @@ wire[7:0] Tile_X2Y3_W2BEG;
 wire[7:0] Tile_X2Y3_W2BEGb;
 wire[15:0] Tile_X2Y3_WW4BEG;
 wire[11:0] Tile_X2Y3_W6BEG;
-wire[0:0] Tile_X2Y3_CO;
+wire[0:0] Tile_X2Y3_Co;
 wire[3:0] Tile_X3Y3_N_GBUF_BEG;
 wire[3:0] Tile_X3Y3_N1BEG;
 wire[7:0] Tile_X3Y3_N2BEG;
@@ -1613,7 +1613,7 @@ wire[7:0] Tile_X4Y3_W2BEG;
 wire[7:0] Tile_X4Y3_W2BEGb;
 wire[15:0] Tile_X4Y3_WW4BEG;
 wire[11:0] Tile_X4Y3_W6BEG;
-wire[0:0] Tile_X4Y3_CO;
+wire[0:0] Tile_X4Y3_Co;
 wire[3:0] Tile_X5Y3_N_GBUF_BEG;
 wire[3:0] Tile_X5Y3_N1BEG;
 wire[7:0] Tile_X5Y3_N2BEG;
@@ -1635,7 +1635,7 @@ wire[7:0] Tile_X5Y3_W2BEG;
 wire[7:0] Tile_X5Y3_W2BEGb;
 wire[15:0] Tile_X5Y3_WW4BEG;
 wire[11:0] Tile_X5Y3_W6BEG;
-wire[0:0] Tile_X5Y3_CO;
+wire[0:0] Tile_X5Y3_Co;
 wire[3:0] Tile_X6Y3_N_GBUF_BEG;
 wire[3:0] Tile_X6Y3_N1BEG;
 wire[7:0] Tile_X6Y3_N2BEG;
@@ -1657,7 +1657,7 @@ wire[7:0] Tile_X6Y3_W2BEG;
 wire[7:0] Tile_X6Y3_W2BEGb;
 wire[15:0] Tile_X6Y3_WW4BEG;
 wire[11:0] Tile_X6Y3_W6BEG;
-wire[0:0] Tile_X6Y3_CO;
+wire[0:0] Tile_X6Y3_Co;
 wire[3:0] Tile_X7Y3_N_GBUF_BEG;
 wire[3:0] Tile_X7Y3_N1BEG;
 wire[7:0] Tile_X7Y3_N2BEG;
@@ -1679,7 +1679,7 @@ wire[7:0] Tile_X7Y3_W2BEG;
 wire[7:0] Tile_X7Y3_W2BEGb;
 wire[15:0] Tile_X7Y3_WW4BEG;
 wire[11:0] Tile_X7Y3_W6BEG;
-wire[0:0] Tile_X7Y3_CO;
+wire[0:0] Tile_X7Y3_Co;
 wire[3:0] Tile_X8Y3_N_GBUF_BEG;
 wire[3:0] Tile_X8Y3_W1BEG;
 wire[7:0] Tile_X8Y3_W2BEG;
@@ -1714,7 +1714,7 @@ wire[7:0] Tile_X1Y4_W2BEG;
 wire[7:0] Tile_X1Y4_W2BEGb;
 wire[15:0] Tile_X1Y4_WW4BEG;
 wire[11:0] Tile_X1Y4_W6BEG;
-wire[0:0] Tile_X1Y4_CO;
+wire[0:0] Tile_X1Y4_Co;
 wire[3:0] Tile_X2Y4_N_GBUF_BEG;
 wire[3:0] Tile_X2Y4_N1BEG;
 wire[7:0] Tile_X2Y4_N2BEG;
@@ -1736,7 +1736,7 @@ wire[7:0] Tile_X2Y4_W2BEG;
 wire[7:0] Tile_X2Y4_W2BEGb;
 wire[15:0] Tile_X2Y4_WW4BEG;
 wire[11:0] Tile_X2Y4_W6BEG;
-wire[0:0] Tile_X2Y4_CO;
+wire[0:0] Tile_X2Y4_Co;
 wire[3:0] Tile_X3Y4_N_GBUF_BEG;
 wire[3:0] Tile_X3Y4_N1BEG;
 wire[7:0] Tile_X3Y4_N2BEG;
@@ -1779,7 +1779,7 @@ wire[7:0] Tile_X4Y4_W2BEG;
 wire[7:0] Tile_X4Y4_W2BEGb;
 wire[15:0] Tile_X4Y4_WW4BEG;
 wire[11:0] Tile_X4Y4_W6BEG;
-wire[0:0] Tile_X4Y4_CO;
+wire[0:0] Tile_X4Y4_Co;
 wire[3:0] Tile_X5Y4_N_GBUF_BEG;
 wire[3:0] Tile_X5Y4_N1BEG;
 wire[7:0] Tile_X5Y4_N2BEG;
@@ -1801,7 +1801,7 @@ wire[7:0] Tile_X5Y4_W2BEG;
 wire[7:0] Tile_X5Y4_W2BEGb;
 wire[15:0] Tile_X5Y4_WW4BEG;
 wire[11:0] Tile_X5Y4_W6BEG;
-wire[0:0] Tile_X5Y4_CO;
+wire[0:0] Tile_X5Y4_Co;
 wire[3:0] Tile_X6Y4_N_GBUF_BEG;
 wire[3:0] Tile_X6Y4_N1BEG;
 wire[7:0] Tile_X6Y4_N2BEG;
@@ -1823,7 +1823,7 @@ wire[7:0] Tile_X6Y4_W2BEG;
 wire[7:0] Tile_X6Y4_W2BEGb;
 wire[15:0] Tile_X6Y4_WW4BEG;
 wire[11:0] Tile_X6Y4_W6BEG;
-wire[0:0] Tile_X6Y4_CO;
+wire[0:0] Tile_X6Y4_Co;
 wire[3:0] Tile_X7Y4_N_GBUF_BEG;
 wire[3:0] Tile_X7Y4_N1BEG;
 wire[7:0] Tile_X7Y4_N2BEG;
@@ -1845,7 +1845,7 @@ wire[7:0] Tile_X7Y4_W2BEG;
 wire[7:0] Tile_X7Y4_W2BEGb;
 wire[15:0] Tile_X7Y4_WW4BEG;
 wire[11:0] Tile_X7Y4_W6BEG;
-wire[0:0] Tile_X7Y4_CO;
+wire[0:0] Tile_X7Y4_Co;
 wire[3:0] Tile_X8Y4_N_GBUF_BEG;
 wire[3:0] Tile_X8Y4_W1BEG;
 wire[7:0] Tile_X8Y4_W2BEG;
@@ -1880,7 +1880,7 @@ wire[7:0] Tile_X1Y5_W2BEG;
 wire[7:0] Tile_X1Y5_W2BEGb;
 wire[15:0] Tile_X1Y5_WW4BEG;
 wire[11:0] Tile_X1Y5_W6BEG;
-wire[0:0] Tile_X1Y5_CO;
+wire[0:0] Tile_X1Y5_Co;
 wire[3:0] Tile_X2Y5_N_GBUF_BEG;
 wire[3:0] Tile_X2Y5_N1BEG;
 wire[7:0] Tile_X2Y5_N2BEG;
@@ -1902,7 +1902,7 @@ wire[7:0] Tile_X2Y5_W2BEG;
 wire[7:0] Tile_X2Y5_W2BEGb;
 wire[15:0] Tile_X2Y5_WW4BEG;
 wire[11:0] Tile_X2Y5_W6BEG;
-wire[0:0] Tile_X2Y5_CO;
+wire[0:0] Tile_X2Y5_Co;
 wire[3:0] Tile_X3Y5_N_GBUF_BEG;
 wire[3:0] Tile_X3Y5_N1BEG;
 wire[7:0] Tile_X3Y5_N2BEG;
@@ -1945,7 +1945,7 @@ wire[7:0] Tile_X4Y5_W2BEG;
 wire[7:0] Tile_X4Y5_W2BEGb;
 wire[15:0] Tile_X4Y5_WW4BEG;
 wire[11:0] Tile_X4Y5_W6BEG;
-wire[0:0] Tile_X4Y5_CO;
+wire[0:0] Tile_X4Y5_Co;
 wire[3:0] Tile_X5Y5_N_GBUF_BEG;
 wire[3:0] Tile_X5Y5_N1BEG;
 wire[7:0] Tile_X5Y5_N2BEG;
@@ -1967,7 +1967,7 @@ wire[7:0] Tile_X5Y5_W2BEG;
 wire[7:0] Tile_X5Y5_W2BEGb;
 wire[15:0] Tile_X5Y5_WW4BEG;
 wire[11:0] Tile_X5Y5_W6BEG;
-wire[0:0] Tile_X5Y5_CO;
+wire[0:0] Tile_X5Y5_Co;
 wire[3:0] Tile_X6Y5_N_GBUF_BEG;
 wire[3:0] Tile_X6Y5_N1BEG;
 wire[7:0] Tile_X6Y5_N2BEG;
@@ -1989,7 +1989,7 @@ wire[7:0] Tile_X6Y5_W2BEG;
 wire[7:0] Tile_X6Y5_W2BEGb;
 wire[15:0] Tile_X6Y5_WW4BEG;
 wire[11:0] Tile_X6Y5_W6BEG;
-wire[0:0] Tile_X6Y5_CO;
+wire[0:0] Tile_X6Y5_Co;
 wire[3:0] Tile_X7Y5_N_GBUF_BEG;
 wire[3:0] Tile_X7Y5_N1BEG;
 wire[7:0] Tile_X7Y5_N2BEG;
@@ -2011,7 +2011,7 @@ wire[7:0] Tile_X7Y5_W2BEG;
 wire[7:0] Tile_X7Y5_W2BEGb;
 wire[15:0] Tile_X7Y5_WW4BEG;
 wire[11:0] Tile_X7Y5_W6BEG;
-wire[0:0] Tile_X7Y5_CO;
+wire[0:0] Tile_X7Y5_Co;
 wire[3:0] Tile_X8Y5_N_GBUF_BEG;
 wire[3:0] Tile_X8Y5_W1BEG;
 wire[7:0] Tile_X8Y5_W2BEG;
@@ -2046,7 +2046,7 @@ wire[7:0] Tile_X1Y6_W2BEG;
 wire[7:0] Tile_X1Y6_W2BEGb;
 wire[15:0] Tile_X1Y6_WW4BEG;
 wire[11:0] Tile_X1Y6_W6BEG;
-wire[0:0] Tile_X1Y6_CO;
+wire[0:0] Tile_X1Y6_Co;
 wire[3:0] Tile_X2Y6_N_GBUF_BEG;
 wire[3:0] Tile_X2Y6_N1BEG;
 wire[7:0] Tile_X2Y6_N2BEG;
@@ -2068,7 +2068,7 @@ wire[7:0] Tile_X2Y6_W2BEG;
 wire[7:0] Tile_X2Y6_W2BEGb;
 wire[15:0] Tile_X2Y6_WW4BEG;
 wire[11:0] Tile_X2Y6_W6BEG;
-wire[0:0] Tile_X2Y6_CO;
+wire[0:0] Tile_X2Y6_Co;
 wire[3:0] Tile_X3Y6_N_GBUF_BEG;
 wire[3:0] Tile_X3Y6_N1BEG;
 wire[7:0] Tile_X3Y6_N2BEG;
@@ -2111,7 +2111,7 @@ wire[7:0] Tile_X4Y6_W2BEG;
 wire[7:0] Tile_X4Y6_W2BEGb;
 wire[15:0] Tile_X4Y6_WW4BEG;
 wire[11:0] Tile_X4Y6_W6BEG;
-wire[0:0] Tile_X4Y6_CO;
+wire[0:0] Tile_X4Y6_Co;
 wire[3:0] Tile_X5Y6_N_GBUF_BEG;
 wire[3:0] Tile_X5Y6_N1BEG;
 wire[7:0] Tile_X5Y6_N2BEG;
@@ -2133,7 +2133,7 @@ wire[7:0] Tile_X5Y6_W2BEG;
 wire[7:0] Tile_X5Y6_W2BEGb;
 wire[15:0] Tile_X5Y6_WW4BEG;
 wire[11:0] Tile_X5Y6_W6BEG;
-wire[0:0] Tile_X5Y6_CO;
+wire[0:0] Tile_X5Y6_Co;
 wire[3:0] Tile_X6Y6_N_GBUF_BEG;
 wire[3:0] Tile_X6Y6_N1BEG;
 wire[7:0] Tile_X6Y6_N2BEG;
@@ -2155,7 +2155,7 @@ wire[7:0] Tile_X6Y6_W2BEG;
 wire[7:0] Tile_X6Y6_W2BEGb;
 wire[15:0] Tile_X6Y6_WW4BEG;
 wire[11:0] Tile_X6Y6_W6BEG;
-wire[0:0] Tile_X6Y6_CO;
+wire[0:0] Tile_X6Y6_Co;
 wire[3:0] Tile_X7Y6_N_GBUF_BEG;
 wire[3:0] Tile_X7Y6_N1BEG;
 wire[7:0] Tile_X7Y6_N2BEG;
@@ -2177,7 +2177,7 @@ wire[7:0] Tile_X7Y6_W2BEG;
 wire[7:0] Tile_X7Y6_W2BEGb;
 wire[15:0] Tile_X7Y6_WW4BEG;
 wire[11:0] Tile_X7Y6_W6BEG;
-wire[0:0] Tile_X7Y6_CO;
+wire[0:0] Tile_X7Y6_Co;
 wire[3:0] Tile_X8Y6_N_GBUF_BEG;
 wire[3:0] Tile_X8Y6_W1BEG;
 wire[7:0] Tile_X8Y6_W2BEG;
@@ -2212,7 +2212,7 @@ wire[7:0] Tile_X1Y7_W2BEG;
 wire[7:0] Tile_X1Y7_W2BEGb;
 wire[15:0] Tile_X1Y7_WW4BEG;
 wire[11:0] Tile_X1Y7_W6BEG;
-wire[0:0] Tile_X1Y7_CO;
+wire[0:0] Tile_X1Y7_Co;
 wire[3:0] Tile_X2Y7_N_GBUF_BEG;
 wire[3:0] Tile_X2Y7_N1BEG;
 wire[7:0] Tile_X2Y7_N2BEG;
@@ -2234,7 +2234,7 @@ wire[7:0] Tile_X2Y7_W2BEG;
 wire[7:0] Tile_X2Y7_W2BEGb;
 wire[15:0] Tile_X2Y7_WW4BEG;
 wire[11:0] Tile_X2Y7_W6BEG;
-wire[0:0] Tile_X2Y7_CO;
+wire[0:0] Tile_X2Y7_Co;
 wire[3:0] Tile_X3Y7_N_GBUF_BEG;
 wire[3:0] Tile_X3Y7_N1BEG;
 wire[7:0] Tile_X3Y7_N2BEG;
@@ -2277,7 +2277,7 @@ wire[7:0] Tile_X4Y7_W2BEG;
 wire[7:0] Tile_X4Y7_W2BEGb;
 wire[15:0] Tile_X4Y7_WW4BEG;
 wire[11:0] Tile_X4Y7_W6BEG;
-wire[0:0] Tile_X4Y7_CO;
+wire[0:0] Tile_X4Y7_Co;
 wire[3:0] Tile_X5Y7_N_GBUF_BEG;
 wire[3:0] Tile_X5Y7_N1BEG;
 wire[7:0] Tile_X5Y7_N2BEG;
@@ -2299,7 +2299,7 @@ wire[7:0] Tile_X5Y7_W2BEG;
 wire[7:0] Tile_X5Y7_W2BEGb;
 wire[15:0] Tile_X5Y7_WW4BEG;
 wire[11:0] Tile_X5Y7_W6BEG;
-wire[0:0] Tile_X5Y7_CO;
+wire[0:0] Tile_X5Y7_Co;
 wire[3:0] Tile_X6Y7_N_GBUF_BEG;
 wire[3:0] Tile_X6Y7_N1BEG;
 wire[7:0] Tile_X6Y7_N2BEG;
@@ -2321,7 +2321,7 @@ wire[7:0] Tile_X6Y7_W2BEG;
 wire[7:0] Tile_X6Y7_W2BEGb;
 wire[15:0] Tile_X6Y7_WW4BEG;
 wire[11:0] Tile_X6Y7_W6BEG;
-wire[0:0] Tile_X6Y7_CO;
+wire[0:0] Tile_X6Y7_Co;
 wire[3:0] Tile_X7Y7_N_GBUF_BEG;
 wire[3:0] Tile_X7Y7_N1BEG;
 wire[7:0] Tile_X7Y7_N2BEG;
@@ -2343,7 +2343,7 @@ wire[7:0] Tile_X7Y7_W2BEG;
 wire[7:0] Tile_X7Y7_W2BEGb;
 wire[15:0] Tile_X7Y7_WW4BEG;
 wire[11:0] Tile_X7Y7_W6BEG;
-wire[0:0] Tile_X7Y7_CO;
+wire[0:0] Tile_X7Y7_Co;
 wire[3:0] Tile_X8Y7_N_GBUF_BEG;
 wire[3:0] Tile_X8Y7_W1BEG;
 wire[7:0] Tile_X8Y7_W2BEG;
@@ -2378,7 +2378,7 @@ wire[7:0] Tile_X1Y8_W2BEG;
 wire[7:0] Tile_X1Y8_W2BEGb;
 wire[15:0] Tile_X1Y8_WW4BEG;
 wire[11:0] Tile_X1Y8_W6BEG;
-wire[0:0] Tile_X1Y8_CO;
+wire[0:0] Tile_X1Y8_Co;
 wire[3:0] Tile_X2Y8_N_GBUF_BEG;
 wire[3:0] Tile_X2Y8_N1BEG;
 wire[7:0] Tile_X2Y8_N2BEG;
@@ -2400,7 +2400,7 @@ wire[7:0] Tile_X2Y8_W2BEG;
 wire[7:0] Tile_X2Y8_W2BEGb;
 wire[15:0] Tile_X2Y8_WW4BEG;
 wire[11:0] Tile_X2Y8_W6BEG;
-wire[0:0] Tile_X2Y8_CO;
+wire[0:0] Tile_X2Y8_Co;
 wire[3:0] Tile_X3Y8_N_GBUF_BEG;
 wire[3:0] Tile_X3Y8_N1BEG;
 wire[7:0] Tile_X3Y8_N2BEG;
@@ -2443,7 +2443,7 @@ wire[7:0] Tile_X4Y8_W2BEG;
 wire[7:0] Tile_X4Y8_W2BEGb;
 wire[15:0] Tile_X4Y8_WW4BEG;
 wire[11:0] Tile_X4Y8_W6BEG;
-wire[0:0] Tile_X4Y8_CO;
+wire[0:0] Tile_X4Y8_Co;
 wire[3:0] Tile_X5Y8_N_GBUF_BEG;
 wire[3:0] Tile_X5Y8_N1BEG;
 wire[7:0] Tile_X5Y8_N2BEG;
@@ -2465,7 +2465,7 @@ wire[7:0] Tile_X5Y8_W2BEG;
 wire[7:0] Tile_X5Y8_W2BEGb;
 wire[15:0] Tile_X5Y8_WW4BEG;
 wire[11:0] Tile_X5Y8_W6BEG;
-wire[0:0] Tile_X5Y8_CO;
+wire[0:0] Tile_X5Y8_Co;
 wire[3:0] Tile_X6Y8_N_GBUF_BEG;
 wire[3:0] Tile_X6Y8_N1BEG;
 wire[7:0] Tile_X6Y8_N2BEG;
@@ -2487,7 +2487,7 @@ wire[7:0] Tile_X6Y8_W2BEG;
 wire[7:0] Tile_X6Y8_W2BEGb;
 wire[15:0] Tile_X6Y8_WW4BEG;
 wire[11:0] Tile_X6Y8_W6BEG;
-wire[0:0] Tile_X6Y8_CO;
+wire[0:0] Tile_X6Y8_Co;
 wire[3:0] Tile_X7Y8_N_GBUF_BEG;
 wire[3:0] Tile_X7Y8_N1BEG;
 wire[7:0] Tile_X7Y8_N2BEG;
@@ -2509,7 +2509,7 @@ wire[7:0] Tile_X7Y8_W2BEG;
 wire[7:0] Tile_X7Y8_W2BEGb;
 wire[15:0] Tile_X7Y8_WW4BEG;
 wire[11:0] Tile_X7Y8_W6BEG;
-wire[0:0] Tile_X7Y8_CO;
+wire[0:0] Tile_X7Y8_Co;
 wire[3:0] Tile_X8Y8_N_GBUF_BEG;
 wire[3:0] Tile_X8Y8_W1BEG;
 wire[7:0] Tile_X8Y8_W2BEG;
@@ -2544,7 +2544,7 @@ wire[7:0] Tile_X1Y9_W2BEG;
 wire[7:0] Tile_X1Y9_W2BEGb;
 wire[15:0] Tile_X1Y9_WW4BEG;
 wire[11:0] Tile_X1Y9_W6BEG;
-wire[0:0] Tile_X1Y9_CO;
+wire[0:0] Tile_X1Y9_Co;
 wire[3:0] Tile_X2Y9_N_GBUF_BEG;
 wire[3:0] Tile_X2Y9_N1BEG;
 wire[7:0] Tile_X2Y9_N2BEG;
@@ -2566,7 +2566,7 @@ wire[7:0] Tile_X2Y9_W2BEG;
 wire[7:0] Tile_X2Y9_W2BEGb;
 wire[15:0] Tile_X2Y9_WW4BEG;
 wire[11:0] Tile_X2Y9_W6BEG;
-wire[0:0] Tile_X2Y9_CO;
+wire[0:0] Tile_X2Y9_Co;
 wire[3:0] Tile_X3Y9_N_GBUF_BEG;
 wire[3:0] Tile_X3Y9_N1BEG;
 wire[7:0] Tile_X3Y9_N2BEG;
@@ -2609,7 +2609,7 @@ wire[7:0] Tile_X4Y9_W2BEG;
 wire[7:0] Tile_X4Y9_W2BEGb;
 wire[15:0] Tile_X4Y9_WW4BEG;
 wire[11:0] Tile_X4Y9_W6BEG;
-wire[0:0] Tile_X4Y9_CO;
+wire[0:0] Tile_X4Y9_Co;
 wire[3:0] Tile_X5Y9_N_GBUF_BEG;
 wire[3:0] Tile_X5Y9_N1BEG;
 wire[7:0] Tile_X5Y9_N2BEG;
@@ -2631,7 +2631,7 @@ wire[7:0] Tile_X5Y9_W2BEG;
 wire[7:0] Tile_X5Y9_W2BEGb;
 wire[15:0] Tile_X5Y9_WW4BEG;
 wire[11:0] Tile_X5Y9_W6BEG;
-wire[0:0] Tile_X5Y9_CO;
+wire[0:0] Tile_X5Y9_Co;
 wire[3:0] Tile_X6Y9_N_GBUF_BEG;
 wire[3:0] Tile_X6Y9_N1BEG;
 wire[7:0] Tile_X6Y9_N2BEG;
@@ -2653,7 +2653,7 @@ wire[7:0] Tile_X6Y9_W2BEG;
 wire[7:0] Tile_X6Y9_W2BEGb;
 wire[15:0] Tile_X6Y9_WW4BEG;
 wire[11:0] Tile_X6Y9_W6BEG;
-wire[0:0] Tile_X6Y9_CO;
+wire[0:0] Tile_X6Y9_Co;
 wire[3:0] Tile_X7Y9_N_GBUF_BEG;
 wire[3:0] Tile_X7Y9_N1BEG;
 wire[7:0] Tile_X7Y9_N2BEG;
@@ -2675,7 +2675,7 @@ wire[7:0] Tile_X7Y9_W2BEG;
 wire[7:0] Tile_X7Y9_W2BEGb;
 wire[15:0] Tile_X7Y9_WW4BEG;
 wire[11:0] Tile_X7Y9_W6BEG;
-wire[0:0] Tile_X7Y9_CO;
+wire[0:0] Tile_X7Y9_Co;
 wire[3:0] Tile_X8Y9_N_GBUF_BEG;
 wire[3:0] Tile_X8Y9_W1BEG;
 wire[7:0] Tile_X8Y9_W2BEG;
@@ -2710,7 +2710,7 @@ wire[7:0] Tile_X1Y10_W2BEG;
 wire[7:0] Tile_X1Y10_W2BEGb;
 wire[15:0] Tile_X1Y10_WW4BEG;
 wire[11:0] Tile_X1Y10_W6BEG;
-wire[0:0] Tile_X1Y10_CO;
+wire[0:0] Tile_X1Y10_Co;
 wire[3:0] Tile_X2Y10_N_GBUF_BEG;
 wire[3:0] Tile_X2Y10_N1BEG;
 wire[7:0] Tile_X2Y10_N2BEG;
@@ -2732,7 +2732,7 @@ wire[7:0] Tile_X2Y10_W2BEG;
 wire[7:0] Tile_X2Y10_W2BEGb;
 wire[15:0] Tile_X2Y10_WW4BEG;
 wire[11:0] Tile_X2Y10_W6BEG;
-wire[0:0] Tile_X2Y10_CO;
+wire[0:0] Tile_X2Y10_Co;
 wire[3:0] Tile_X3Y10_N_GBUF_BEG;
 wire[3:0] Tile_X3Y10_N1BEG;
 wire[7:0] Tile_X3Y10_N2BEG;
@@ -2775,7 +2775,7 @@ wire[7:0] Tile_X4Y10_W2BEG;
 wire[7:0] Tile_X4Y10_W2BEGb;
 wire[15:0] Tile_X4Y10_WW4BEG;
 wire[11:0] Tile_X4Y10_W6BEG;
-wire[0:0] Tile_X4Y10_CO;
+wire[0:0] Tile_X4Y10_Co;
 wire[3:0] Tile_X5Y10_N_GBUF_BEG;
 wire[3:0] Tile_X5Y10_N1BEG;
 wire[7:0] Tile_X5Y10_N2BEG;
@@ -2797,7 +2797,7 @@ wire[7:0] Tile_X5Y10_W2BEG;
 wire[7:0] Tile_X5Y10_W2BEGb;
 wire[15:0] Tile_X5Y10_WW4BEG;
 wire[11:0] Tile_X5Y10_W6BEG;
-wire[0:0] Tile_X5Y10_CO;
+wire[0:0] Tile_X5Y10_Co;
 wire[3:0] Tile_X6Y10_N_GBUF_BEG;
 wire[3:0] Tile_X6Y10_N1BEG;
 wire[7:0] Tile_X6Y10_N2BEG;
@@ -2819,7 +2819,7 @@ wire[7:0] Tile_X6Y10_W2BEG;
 wire[7:0] Tile_X6Y10_W2BEGb;
 wire[15:0] Tile_X6Y10_WW4BEG;
 wire[11:0] Tile_X6Y10_W6BEG;
-wire[0:0] Tile_X6Y10_CO;
+wire[0:0] Tile_X6Y10_Co;
 wire[3:0] Tile_X7Y10_N_GBUF_BEG;
 wire[3:0] Tile_X7Y10_N1BEG;
 wire[7:0] Tile_X7Y10_N2BEG;
@@ -2841,7 +2841,7 @@ wire[7:0] Tile_X7Y10_W2BEG;
 wire[7:0] Tile_X7Y10_W2BEGb;
 wire[15:0] Tile_X7Y10_WW4BEG;
 wire[11:0] Tile_X7Y10_W6BEG;
-wire[0:0] Tile_X7Y10_CO;
+wire[0:0] Tile_X7Y10_Co;
 wire[3:0] Tile_X8Y10_N_GBUF_BEG;
 wire[3:0] Tile_X8Y10_W1BEG;
 wire[7:0] Tile_X8Y10_W2BEG;
@@ -2876,7 +2876,7 @@ wire[7:0] Tile_X1Y11_W2BEG;
 wire[7:0] Tile_X1Y11_W2BEGb;
 wire[15:0] Tile_X1Y11_WW4BEG;
 wire[11:0] Tile_X1Y11_W6BEG;
-wire[0:0] Tile_X1Y11_CO;
+wire[0:0] Tile_X1Y11_Co;
 wire[3:0] Tile_X2Y11_N_GBUF_BEG;
 wire[3:0] Tile_X2Y11_N1BEG;
 wire[7:0] Tile_X2Y11_N2BEG;
@@ -2898,7 +2898,7 @@ wire[7:0] Tile_X2Y11_W2BEG;
 wire[7:0] Tile_X2Y11_W2BEGb;
 wire[15:0] Tile_X2Y11_WW4BEG;
 wire[11:0] Tile_X2Y11_W6BEG;
-wire[0:0] Tile_X2Y11_CO;
+wire[0:0] Tile_X2Y11_Co;
 wire[3:0] Tile_X3Y11_N_GBUF_BEG;
 wire[3:0] Tile_X3Y11_N1BEG;
 wire[7:0] Tile_X3Y11_N2BEG;
@@ -2941,7 +2941,7 @@ wire[7:0] Tile_X4Y11_W2BEG;
 wire[7:0] Tile_X4Y11_W2BEGb;
 wire[15:0] Tile_X4Y11_WW4BEG;
 wire[11:0] Tile_X4Y11_W6BEG;
-wire[0:0] Tile_X4Y11_CO;
+wire[0:0] Tile_X4Y11_Co;
 wire[3:0] Tile_X5Y11_N_GBUF_BEG;
 wire[3:0] Tile_X5Y11_N1BEG;
 wire[7:0] Tile_X5Y11_N2BEG;
@@ -2963,7 +2963,7 @@ wire[7:0] Tile_X5Y11_W2BEG;
 wire[7:0] Tile_X5Y11_W2BEGb;
 wire[15:0] Tile_X5Y11_WW4BEG;
 wire[11:0] Tile_X5Y11_W6BEG;
-wire[0:0] Tile_X5Y11_CO;
+wire[0:0] Tile_X5Y11_Co;
 wire[3:0] Tile_X6Y11_N_GBUF_BEG;
 wire[3:0] Tile_X6Y11_N1BEG;
 wire[7:0] Tile_X6Y11_N2BEG;
@@ -2985,7 +2985,7 @@ wire[7:0] Tile_X6Y11_W2BEG;
 wire[7:0] Tile_X6Y11_W2BEGb;
 wire[15:0] Tile_X6Y11_WW4BEG;
 wire[11:0] Tile_X6Y11_W6BEG;
-wire[0:0] Tile_X6Y11_CO;
+wire[0:0] Tile_X6Y11_Co;
 wire[3:0] Tile_X7Y11_N_GBUF_BEG;
 wire[3:0] Tile_X7Y11_N1BEG;
 wire[7:0] Tile_X7Y11_N2BEG;
@@ -3007,7 +3007,7 @@ wire[7:0] Tile_X7Y11_W2BEG;
 wire[7:0] Tile_X7Y11_W2BEGb;
 wire[15:0] Tile_X7Y11_WW4BEG;
 wire[11:0] Tile_X7Y11_W6BEG;
-wire[0:0] Tile_X7Y11_CO;
+wire[0:0] Tile_X7Y11_Co;
 wire[3:0] Tile_X8Y11_N_GBUF_BEG;
 wire[3:0] Tile_X8Y11_W1BEG;
 wire[7:0] Tile_X8Y11_W2BEG;
@@ -3042,7 +3042,7 @@ wire[7:0] Tile_X1Y12_W2BEG;
 wire[7:0] Tile_X1Y12_W2BEGb;
 wire[15:0] Tile_X1Y12_WW4BEG;
 wire[11:0] Tile_X1Y12_W6BEG;
-wire[0:0] Tile_X1Y12_CO;
+wire[0:0] Tile_X1Y12_Co;
 wire[3:0] Tile_X2Y12_N_GBUF_BEG;
 wire[3:0] Tile_X2Y12_N1BEG;
 wire[7:0] Tile_X2Y12_N2BEG;
@@ -3064,7 +3064,7 @@ wire[7:0] Tile_X2Y12_W2BEG;
 wire[7:0] Tile_X2Y12_W2BEGb;
 wire[15:0] Tile_X2Y12_WW4BEG;
 wire[11:0] Tile_X2Y12_W6BEG;
-wire[0:0] Tile_X2Y12_CO;
+wire[0:0] Tile_X2Y12_Co;
 wire[3:0] Tile_X3Y12_N_GBUF_BEG;
 wire[3:0] Tile_X3Y12_N1BEG;
 wire[7:0] Tile_X3Y12_N2BEG;
@@ -3107,7 +3107,7 @@ wire[7:0] Tile_X4Y12_W2BEG;
 wire[7:0] Tile_X4Y12_W2BEGb;
 wire[15:0] Tile_X4Y12_WW4BEG;
 wire[11:0] Tile_X4Y12_W6BEG;
-wire[0:0] Tile_X4Y12_CO;
+wire[0:0] Tile_X4Y12_Co;
 wire[3:0] Tile_X5Y12_N_GBUF_BEG;
 wire[3:0] Tile_X5Y12_N1BEG;
 wire[7:0] Tile_X5Y12_N2BEG;
@@ -3129,7 +3129,7 @@ wire[7:0] Tile_X5Y12_W2BEG;
 wire[7:0] Tile_X5Y12_W2BEGb;
 wire[15:0] Tile_X5Y12_WW4BEG;
 wire[11:0] Tile_X5Y12_W6BEG;
-wire[0:0] Tile_X5Y12_CO;
+wire[0:0] Tile_X5Y12_Co;
 wire[3:0] Tile_X6Y12_N_GBUF_BEG;
 wire[3:0] Tile_X6Y12_N1BEG;
 wire[7:0] Tile_X6Y12_N2BEG;
@@ -3151,7 +3151,7 @@ wire[7:0] Tile_X6Y12_W2BEG;
 wire[7:0] Tile_X6Y12_W2BEGb;
 wire[15:0] Tile_X6Y12_WW4BEG;
 wire[11:0] Tile_X6Y12_W6BEG;
-wire[0:0] Tile_X6Y12_CO;
+wire[0:0] Tile_X6Y12_Co;
 wire[3:0] Tile_X7Y12_N_GBUF_BEG;
 wire[3:0] Tile_X7Y12_N1BEG;
 wire[7:0] Tile_X7Y12_N2BEG;
@@ -3173,7 +3173,7 @@ wire[7:0] Tile_X7Y12_W2BEG;
 wire[7:0] Tile_X7Y12_W2BEGb;
 wire[15:0] Tile_X7Y12_WW4BEG;
 wire[11:0] Tile_X7Y12_W6BEG;
-wire[0:0] Tile_X7Y12_CO;
+wire[0:0] Tile_X7Y12_Co;
 wire[3:0] Tile_X8Y12_N_GBUF_BEG;
 wire[3:0] Tile_X8Y12_W1BEG;
 wire[7:0] Tile_X8Y12_W2BEG;
@@ -3208,7 +3208,7 @@ wire[7:0] Tile_X1Y13_W2BEG;
 wire[7:0] Tile_X1Y13_W2BEGb;
 wire[15:0] Tile_X1Y13_WW4BEG;
 wire[11:0] Tile_X1Y13_W6BEG;
-wire[0:0] Tile_X1Y13_CO;
+wire[0:0] Tile_X1Y13_Co;
 wire[3:0] Tile_X2Y13_N_GBUF_BEG;
 wire[3:0] Tile_X2Y13_N1BEG;
 wire[7:0] Tile_X2Y13_N2BEG;
@@ -3230,7 +3230,7 @@ wire[7:0] Tile_X2Y13_W2BEG;
 wire[7:0] Tile_X2Y13_W2BEGb;
 wire[15:0] Tile_X2Y13_WW4BEG;
 wire[11:0] Tile_X2Y13_W6BEG;
-wire[0:0] Tile_X2Y13_CO;
+wire[0:0] Tile_X2Y13_Co;
 wire[3:0] Tile_X3Y13_N_GBUF_BEG;
 wire[3:0] Tile_X3Y13_N1BEG;
 wire[7:0] Tile_X3Y13_N2BEG;
@@ -3273,7 +3273,7 @@ wire[7:0] Tile_X4Y13_W2BEG;
 wire[7:0] Tile_X4Y13_W2BEGb;
 wire[15:0] Tile_X4Y13_WW4BEG;
 wire[11:0] Tile_X4Y13_W6BEG;
-wire[0:0] Tile_X4Y13_CO;
+wire[0:0] Tile_X4Y13_Co;
 wire[3:0] Tile_X5Y13_N_GBUF_BEG;
 wire[3:0] Tile_X5Y13_N1BEG;
 wire[7:0] Tile_X5Y13_N2BEG;
@@ -3295,7 +3295,7 @@ wire[7:0] Tile_X5Y13_W2BEG;
 wire[7:0] Tile_X5Y13_W2BEGb;
 wire[15:0] Tile_X5Y13_WW4BEG;
 wire[11:0] Tile_X5Y13_W6BEG;
-wire[0:0] Tile_X5Y13_CO;
+wire[0:0] Tile_X5Y13_Co;
 wire[3:0] Tile_X6Y13_N_GBUF_BEG;
 wire[3:0] Tile_X6Y13_N1BEG;
 wire[7:0] Tile_X6Y13_N2BEG;
@@ -3317,7 +3317,7 @@ wire[7:0] Tile_X6Y13_W2BEG;
 wire[7:0] Tile_X6Y13_W2BEGb;
 wire[15:0] Tile_X6Y13_WW4BEG;
 wire[11:0] Tile_X6Y13_W6BEG;
-wire[0:0] Tile_X6Y13_CO;
+wire[0:0] Tile_X6Y13_Co;
 wire[3:0] Tile_X7Y13_N_GBUF_BEG;
 wire[3:0] Tile_X7Y13_N1BEG;
 wire[7:0] Tile_X7Y13_N2BEG;
@@ -3339,7 +3339,7 @@ wire[7:0] Tile_X7Y13_W2BEG;
 wire[7:0] Tile_X7Y13_W2BEGb;
 wire[15:0] Tile_X7Y13_WW4BEG;
 wire[11:0] Tile_X7Y13_W6BEG;
-wire[0:0] Tile_X7Y13_CO;
+wire[0:0] Tile_X7Y13_Co;
 wire[3:0] Tile_X8Y13_N_GBUF_BEG;
 wire[3:0] Tile_X8Y13_W1BEG;
 wire[7:0] Tile_X8Y13_W2BEG;
@@ -3440,7 +3440,7 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-NW_GF_term
+(* keep *) NW_GF_term
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y0_Emulate_Bitstream)
@@ -3459,7 +3459,7 @@ NW_GF_term
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-N_term_single
+(* keep *) N_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y0_Emulate_Bitstream)
@@ -3473,7 +3473,7 @@ N_term_single
     .N2END(Tile_X1Y1_N2BEGb),
     .N4END(Tile_X1Y1_N4BEG),
     .NN4END(Tile_X1Y1_NN4BEG),
-    .Ci(Tile_X1Y1_CO),
+    .Ci(Tile_X1Y1_Co),
     .S1BEG(Tile_X1Y0_S1BEG),
     .S2BEG(Tile_X1Y0_S2BEG),
     .S2BEGb(Tile_X1Y0_S2BEGb),
@@ -3488,7 +3488,7 @@ N_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-N_term_single
+(* keep *) N_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y0_Emulate_Bitstream)
@@ -3502,7 +3502,7 @@ N_term_single
     .N2END(Tile_X2Y1_N2BEGb),
     .N4END(Tile_X2Y1_N4BEG),
     .NN4END(Tile_X2Y1_NN4BEG),
-    .Ci(Tile_X2Y1_CO),
+    .Ci(Tile_X2Y1_Co),
     .S1BEG(Tile_X2Y0_S1BEG),
     .S2BEG(Tile_X2Y0_S2BEG),
     .S2BEGb(Tile_X2Y0_S2BEGb),
@@ -3517,7 +3517,7 @@ N_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-N_term_RegFile
+(* keep *) N_term_RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y0_Emulate_Bitstream)
@@ -3545,7 +3545,7 @@ N_term_RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-N_term_single
+(* keep *) N_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y0_Emulate_Bitstream)
@@ -3559,7 +3559,7 @@ N_term_single
     .N2END(Tile_X4Y1_N2BEGb),
     .N4END(Tile_X4Y1_N4BEG),
     .NN4END(Tile_X4Y1_NN4BEG),
-    .Ci(Tile_X4Y1_CO),
+    .Ci(Tile_X4Y1_Co),
     .S1BEG(Tile_X4Y0_S1BEG),
     .S2BEG(Tile_X4Y0_S2BEG),
     .S2BEGb(Tile_X4Y0_S2BEGb),
@@ -3574,7 +3574,7 @@ N_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-N_term_single
+(* keep *) N_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y0_Emulate_Bitstream)
@@ -3588,7 +3588,7 @@ N_term_single
     .N2END(Tile_X5Y1_N2BEGb),
     .N4END(Tile_X5Y1_N4BEG),
     .NN4END(Tile_X5Y1_NN4BEG),
-    .Ci(Tile_X5Y1_CO),
+    .Ci(Tile_X5Y1_Co),
     .S1BEG(Tile_X5Y0_S1BEG),
     .S2BEG(Tile_X5Y0_S2BEG),
     .S2BEGb(Tile_X5Y0_S2BEGb),
@@ -3603,7 +3603,7 @@ N_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-N_term_single
+(* keep *) N_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y0_Emulate_Bitstream)
@@ -3617,7 +3617,7 @@ N_term_single
     .N2END(Tile_X6Y1_N2BEGb),
     .N4END(Tile_X6Y1_N4BEG),
     .NN4END(Tile_X6Y1_NN4BEG),
-    .Ci(Tile_X6Y1_CO),
+    .Ci(Tile_X6Y1_Co),
     .S1BEG(Tile_X6Y0_S1BEG),
     .S2BEG(Tile_X6Y0_S2BEG),
     .S2BEGb(Tile_X6Y0_S2BEGb),
@@ -3632,7 +3632,7 @@ N_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-N_term_single
+(* keep *) N_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y0_Emulate_Bitstream)
@@ -3646,7 +3646,7 @@ N_term_single
     .N2END(Tile_X7Y1_N2BEGb),
     .N4END(Tile_X7Y1_N4BEG),
     .NN4END(Tile_X7Y1_NN4BEG),
-    .Ci(Tile_X7Y1_CO),
+    .Ci(Tile_X7Y1_Co),
     .S1BEG(Tile_X7Y0_S1BEG),
     .S2BEG(Tile_X7Y0_S2BEG),
     .S2BEGb(Tile_X7Y0_S2BEGb),
@@ -3661,7 +3661,7 @@ N_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-NE_term
+(* keep *) NE_term
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y0_Emulate_Bitstream)
@@ -3679,7 +3679,7 @@ NE_term
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_term_single
+(* keep *) W_GF_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y1_Emulate_Bitstream)
@@ -3710,7 +3710,7 @@ W_GF_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y1_Emulate_Bitstream)
@@ -3724,7 +3724,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y2_N2BEGb),
     .N4END(Tile_X1Y2_N4BEG),
     .NN4END(Tile_X1Y2_NN4BEG),
-    .CI(Tile_X1Y2_CO),
+    .Ci(Tile_X1Y2_Co),
     .E1END(Tile_X0Y1_E1BEG),
     .E2MID(Tile_X0Y1_E2BEG),
     .E2END(Tile_X0Y1_E2BEGb),
@@ -3761,7 +3761,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y1_W2BEGb),
     .WW4BEG(Tile_X1Y1_WW4BEG),
     .W6BEG(Tile_X1Y1_W6BEG),
-    .CO(Tile_X1Y1_CO),
+    .Co(Tile_X1Y1_Co),
     .FrameData(Tile_X0Y1_FrameData_O),
     .FrameData_O(Tile_X1Y1_FrameData_O),
     .FrameStrobe(Tile_X1Y2_FrameStrobe_O),
@@ -3771,7 +3771,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y1_Emulate_Bitstream)
@@ -3785,7 +3785,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y2_N2BEGb),
     .N4END(Tile_X2Y2_N4BEG),
     .NN4END(Tile_X2Y2_NN4BEG),
-    .CI(Tile_X2Y2_CO),
+    .Ci(Tile_X2Y2_Co),
     .E1END(Tile_X1Y1_E1BEG),
     .E2MID(Tile_X1Y1_E2BEG),
     .E2END(Tile_X1Y1_E2BEGb),
@@ -3822,7 +3822,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y1_W2BEGb),
     .WW4BEG(Tile_X2Y1_WW4BEG),
     .W6BEG(Tile_X2Y1_W6BEG),
-    .CO(Tile_X2Y1_CO),
+    .Co(Tile_X2Y1_Co),
     .FrameData(Tile_X1Y1_FrameData_O),
     .FrameData_O(Tile_X2Y1_FrameData_O),
     .FrameStrobe(Tile_X2Y2_FrameStrobe_O),
@@ -3832,7 +3832,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y1_Emulate_Bitstream)
@@ -3891,7 +3891,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y1_Emulate_Bitstream)
@@ -3905,7 +3905,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y2_N2BEGb),
     .N4END(Tile_X4Y2_N4BEG),
     .NN4END(Tile_X4Y2_NN4BEG),
-    .CI(Tile_X4Y2_CO),
+    .Ci(Tile_X4Y2_Co),
     .E1END(Tile_X3Y1_E1BEG),
     .E2MID(Tile_X3Y1_E2BEG),
     .E2END(Tile_X3Y1_E2BEGb),
@@ -3942,7 +3942,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y1_W2BEGb),
     .WW4BEG(Tile_X4Y1_WW4BEG),
     .W6BEG(Tile_X4Y1_W6BEG),
-    .CO(Tile_X4Y1_CO),
+    .Co(Tile_X4Y1_Co),
     .FrameData(Tile_X3Y1_FrameData_O),
     .FrameData_O(Tile_X4Y1_FrameData_O),
     .FrameStrobe(Tile_X4Y2_FrameStrobe_O),
@@ -3952,7 +3952,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y1_Emulate_Bitstream)
@@ -3966,7 +3966,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y2_N2BEGb),
     .N4END(Tile_X5Y2_N4BEG),
     .NN4END(Tile_X5Y2_NN4BEG),
-    .CI(Tile_X5Y2_CO),
+    .Ci(Tile_X5Y2_Co),
     .E1END(Tile_X4Y1_E1BEG),
     .E2MID(Tile_X4Y1_E2BEG),
     .E2END(Tile_X4Y1_E2BEGb),
@@ -4003,7 +4003,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y1_W2BEGb),
     .WW4BEG(Tile_X5Y1_WW4BEG),
     .W6BEG(Tile_X5Y1_W6BEG),
-    .CO(Tile_X5Y1_CO),
+    .Co(Tile_X5Y1_Co),
     .FrameData(Tile_X4Y1_FrameData_O),
     .FrameData_O(Tile_X5Y1_FrameData_O),
     .FrameStrobe(Tile_X5Y2_FrameStrobe_O),
@@ -4013,7 +4013,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y1_Emulate_Bitstream)
@@ -4027,7 +4027,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y2_N2BEGb),
     .N4END(Tile_X6Y2_N4BEG),
     .NN4END(Tile_X6Y2_NN4BEG),
-    .CI(Tile_X6Y2_CO),
+    .Ci(Tile_X6Y2_Co),
     .E1END(Tile_X5Y1_E1BEG),
     .E2MID(Tile_X5Y1_E2BEG),
     .E2END(Tile_X5Y1_E2BEGb),
@@ -4064,7 +4064,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y1_W2BEGb),
     .WW4BEG(Tile_X6Y1_WW4BEG),
     .W6BEG(Tile_X6Y1_W6BEG),
-    .CO(Tile_X6Y1_CO),
+    .Co(Tile_X6Y1_Co),
     .FrameData(Tile_X5Y1_FrameData_O),
     .FrameData_O(Tile_X6Y1_FrameData_O),
     .FrameStrobe(Tile_X6Y2_FrameStrobe_O),
@@ -4074,7 +4074,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y1_Emulate_Bitstream)
@@ -4088,7 +4088,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y2_N2BEGb),
     .N4END(Tile_X7Y2_N4BEG),
     .NN4END(Tile_X7Y2_NN4BEG),
-    .CI(Tile_X7Y2_CO),
+    .Ci(Tile_X7Y2_Co),
     .E1END(Tile_X6Y1_E1BEG),
     .E2MID(Tile_X6Y1_E2BEG),
     .E2END(Tile_X6Y1_E2BEGb),
@@ -4125,7 +4125,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y1_W2BEGb),
     .WW4BEG(Tile_X7Y1_WW4BEG),
     .W6BEG(Tile_X7Y1_W6BEG),
-    .CO(Tile_X7Y1_CO),
+    .Co(Tile_X7Y1_Co),
     .FrameData(Tile_X6Y1_FrameData_O),
     .FrameData_O(Tile_X7Y1_FrameData_O),
     .FrameStrobe(Tile_X7Y2_FrameStrobe_O),
@@ -4135,7 +4135,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y1_Emulate_Bitstream)
@@ -4202,7 +4202,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y2_Emulate_Bitstream)
@@ -4261,7 +4261,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y2_Emulate_Bitstream)
@@ -4275,7 +4275,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y3_N2BEGb),
     .N4END(Tile_X1Y3_N4BEG),
     .NN4END(Tile_X1Y3_NN4BEG),
-    .CI(Tile_X1Y3_CO),
+    .Ci(Tile_X1Y3_Co),
     .E1END(Tile_X0Y2_E1BEG),
     .E2MID(Tile_X0Y2_E2BEG),
     .E2END(Tile_X0Y2_E2BEGb),
@@ -4312,7 +4312,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y2_W2BEGb),
     .WW4BEG(Tile_X1Y2_WW4BEG),
     .W6BEG(Tile_X1Y2_W6BEG),
-    .CO(Tile_X1Y2_CO),
+    .Co(Tile_X1Y2_Co),
     .FrameData(Tile_X0Y2_FrameData_O),
     .FrameData_O(Tile_X1Y2_FrameData_O),
     .FrameStrobe(Tile_X1Y3_FrameStrobe_O),
@@ -4322,7 +4322,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y2_Emulate_Bitstream)
@@ -4336,7 +4336,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y3_N2BEGb),
     .N4END(Tile_X2Y3_N4BEG),
     .NN4END(Tile_X2Y3_NN4BEG),
-    .CI(Tile_X2Y3_CO),
+    .Ci(Tile_X2Y3_Co),
     .E1END(Tile_X1Y2_E1BEG),
     .E2MID(Tile_X1Y2_E2BEG),
     .E2END(Tile_X1Y2_E2BEGb),
@@ -4373,7 +4373,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y2_W2BEGb),
     .WW4BEG(Tile_X2Y2_WW4BEG),
     .W6BEG(Tile_X2Y2_W6BEG),
-    .CO(Tile_X2Y2_CO),
+    .Co(Tile_X2Y2_Co),
     .FrameData(Tile_X1Y2_FrameData_O),
     .FrameData_O(Tile_X2Y2_FrameData_O),
     .FrameStrobe(Tile_X2Y3_FrameStrobe_O),
@@ -4383,7 +4383,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y2_Emulate_Bitstream)
@@ -4442,7 +4442,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y2_Emulate_Bitstream)
@@ -4456,7 +4456,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y3_N2BEGb),
     .N4END(Tile_X4Y3_N4BEG),
     .NN4END(Tile_X4Y3_NN4BEG),
-    .CI(Tile_X4Y3_CO),
+    .Ci(Tile_X4Y3_Co),
     .E1END(Tile_X3Y2_E1BEG),
     .E2MID(Tile_X3Y2_E2BEG),
     .E2END(Tile_X3Y2_E2BEGb),
@@ -4493,7 +4493,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y2_W2BEGb),
     .WW4BEG(Tile_X4Y2_WW4BEG),
     .W6BEG(Tile_X4Y2_W6BEG),
-    .CO(Tile_X4Y2_CO),
+    .Co(Tile_X4Y2_Co),
     .FrameData(Tile_X3Y2_FrameData_O),
     .FrameData_O(Tile_X4Y2_FrameData_O),
     .FrameStrobe(Tile_X4Y3_FrameStrobe_O),
@@ -4503,7 +4503,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y2_Emulate_Bitstream)
@@ -4517,7 +4517,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y3_N2BEGb),
     .N4END(Tile_X5Y3_N4BEG),
     .NN4END(Tile_X5Y3_NN4BEG),
-    .CI(Tile_X5Y3_CO),
+    .Ci(Tile_X5Y3_Co),
     .E1END(Tile_X4Y2_E1BEG),
     .E2MID(Tile_X4Y2_E2BEG),
     .E2END(Tile_X4Y2_E2BEGb),
@@ -4554,7 +4554,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y2_W2BEGb),
     .WW4BEG(Tile_X5Y2_WW4BEG),
     .W6BEG(Tile_X5Y2_W6BEG),
-    .CO(Tile_X5Y2_CO),
+    .Co(Tile_X5Y2_Co),
     .FrameData(Tile_X4Y2_FrameData_O),
     .FrameData_O(Tile_X5Y2_FrameData_O),
     .FrameStrobe(Tile_X5Y3_FrameStrobe_O),
@@ -4564,7 +4564,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y2_Emulate_Bitstream)
@@ -4578,7 +4578,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y3_N2BEGb),
     .N4END(Tile_X6Y3_N4BEG),
     .NN4END(Tile_X6Y3_NN4BEG),
-    .CI(Tile_X6Y3_CO),
+    .Ci(Tile_X6Y3_Co),
     .E1END(Tile_X5Y2_E1BEG),
     .E2MID(Tile_X5Y2_E2BEG),
     .E2END(Tile_X5Y2_E2BEGb),
@@ -4615,7 +4615,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y2_W2BEGb),
     .WW4BEG(Tile_X6Y2_WW4BEG),
     .W6BEG(Tile_X6Y2_W6BEG),
-    .CO(Tile_X6Y2_CO),
+    .Co(Tile_X6Y2_Co),
     .FrameData(Tile_X5Y2_FrameData_O),
     .FrameData_O(Tile_X6Y2_FrameData_O),
     .FrameStrobe(Tile_X6Y3_FrameStrobe_O),
@@ -4625,7 +4625,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y2_Emulate_Bitstream)
@@ -4639,7 +4639,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y3_N2BEGb),
     .N4END(Tile_X7Y3_N4BEG),
     .NN4END(Tile_X7Y3_NN4BEG),
-    .CI(Tile_X7Y3_CO),
+    .Ci(Tile_X7Y3_Co),
     .E1END(Tile_X6Y2_E1BEG),
     .E2MID(Tile_X6Y2_E2BEG),
     .E2END(Tile_X6Y2_E2BEGb),
@@ -4676,7 +4676,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y2_W2BEGb),
     .WW4BEG(Tile_X7Y2_WW4BEG),
     .W6BEG(Tile_X7Y2_W6BEG),
-    .CO(Tile_X7Y2_CO),
+    .Co(Tile_X7Y2_Co),
     .FrameData(Tile_X6Y2_FrameData_O),
     .FrameData_O(Tile_X7Y2_FrameData_O),
     .FrameStrobe(Tile_X7Y3_FrameStrobe_O),
@@ -4686,7 +4686,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y2_Emulate_Bitstream)
@@ -4753,7 +4753,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y3_Emulate_Bitstream)
@@ -4812,7 +4812,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y3_Emulate_Bitstream)
@@ -4826,7 +4826,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y4_N2BEGb),
     .N4END(Tile_X1Y4_N4BEG),
     .NN4END(Tile_X1Y4_NN4BEG),
-    .CI(Tile_X1Y4_CO),
+    .Ci(Tile_X1Y4_Co),
     .E1END(Tile_X0Y3_E1BEG),
     .E2MID(Tile_X0Y3_E2BEG),
     .E2END(Tile_X0Y3_E2BEGb),
@@ -4863,7 +4863,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y3_W2BEGb),
     .WW4BEG(Tile_X1Y3_WW4BEG),
     .W6BEG(Tile_X1Y3_W6BEG),
-    .CO(Tile_X1Y3_CO),
+    .Co(Tile_X1Y3_Co),
     .FrameData(Tile_X0Y3_FrameData_O),
     .FrameData_O(Tile_X1Y3_FrameData_O),
     .FrameStrobe(Tile_X1Y4_FrameStrobe_O),
@@ -4873,7 +4873,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y3_Emulate_Bitstream)
@@ -4887,7 +4887,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y4_N2BEGb),
     .N4END(Tile_X2Y4_N4BEG),
     .NN4END(Tile_X2Y4_NN4BEG),
-    .CI(Tile_X2Y4_CO),
+    .Ci(Tile_X2Y4_Co),
     .E1END(Tile_X1Y3_E1BEG),
     .E2MID(Tile_X1Y3_E2BEG),
     .E2END(Tile_X1Y3_E2BEGb),
@@ -4924,7 +4924,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y3_W2BEGb),
     .WW4BEG(Tile_X2Y3_WW4BEG),
     .W6BEG(Tile_X2Y3_W6BEG),
-    .CO(Tile_X2Y3_CO),
+    .Co(Tile_X2Y3_Co),
     .FrameData(Tile_X1Y3_FrameData_O),
     .FrameData_O(Tile_X2Y3_FrameData_O),
     .FrameStrobe(Tile_X2Y4_FrameStrobe_O),
@@ -4934,7 +4934,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y3_Emulate_Bitstream)
@@ -4993,7 +4993,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y3_Emulate_Bitstream)
@@ -5007,7 +5007,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y4_N2BEGb),
     .N4END(Tile_X4Y4_N4BEG),
     .NN4END(Tile_X4Y4_NN4BEG),
-    .CI(Tile_X4Y4_CO),
+    .Ci(Tile_X4Y4_Co),
     .E1END(Tile_X3Y3_E1BEG),
     .E2MID(Tile_X3Y3_E2BEG),
     .E2END(Tile_X3Y3_E2BEGb),
@@ -5044,7 +5044,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y3_W2BEGb),
     .WW4BEG(Tile_X4Y3_WW4BEG),
     .W6BEG(Tile_X4Y3_W6BEG),
-    .CO(Tile_X4Y3_CO),
+    .Co(Tile_X4Y3_Co),
     .FrameData(Tile_X3Y3_FrameData_O),
     .FrameData_O(Tile_X4Y3_FrameData_O),
     .FrameStrobe(Tile_X4Y4_FrameStrobe_O),
@@ -5054,7 +5054,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y3_Emulate_Bitstream)
@@ -5068,7 +5068,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y4_N2BEGb),
     .N4END(Tile_X5Y4_N4BEG),
     .NN4END(Tile_X5Y4_NN4BEG),
-    .CI(Tile_X5Y4_CO),
+    .Ci(Tile_X5Y4_Co),
     .E1END(Tile_X4Y3_E1BEG),
     .E2MID(Tile_X4Y3_E2BEG),
     .E2END(Tile_X4Y3_E2BEGb),
@@ -5105,7 +5105,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y3_W2BEGb),
     .WW4BEG(Tile_X5Y3_WW4BEG),
     .W6BEG(Tile_X5Y3_W6BEG),
-    .CO(Tile_X5Y3_CO),
+    .Co(Tile_X5Y3_Co),
     .FrameData(Tile_X4Y3_FrameData_O),
     .FrameData_O(Tile_X5Y3_FrameData_O),
     .FrameStrobe(Tile_X5Y4_FrameStrobe_O),
@@ -5115,7 +5115,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y3_Emulate_Bitstream)
@@ -5129,7 +5129,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y4_N2BEGb),
     .N4END(Tile_X6Y4_N4BEG),
     .NN4END(Tile_X6Y4_NN4BEG),
-    .CI(Tile_X6Y4_CO),
+    .Ci(Tile_X6Y4_Co),
     .E1END(Tile_X5Y3_E1BEG),
     .E2MID(Tile_X5Y3_E2BEG),
     .E2END(Tile_X5Y3_E2BEGb),
@@ -5166,7 +5166,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y3_W2BEGb),
     .WW4BEG(Tile_X6Y3_WW4BEG),
     .W6BEG(Tile_X6Y3_W6BEG),
-    .CO(Tile_X6Y3_CO),
+    .Co(Tile_X6Y3_Co),
     .FrameData(Tile_X5Y3_FrameData_O),
     .FrameData_O(Tile_X6Y3_FrameData_O),
     .FrameStrobe(Tile_X6Y4_FrameStrobe_O),
@@ -5176,7 +5176,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y3_Emulate_Bitstream)
@@ -5190,7 +5190,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y4_N2BEGb),
     .N4END(Tile_X7Y4_N4BEG),
     .NN4END(Tile_X7Y4_NN4BEG),
-    .CI(Tile_X7Y4_CO),
+    .Ci(Tile_X7Y4_Co),
     .E1END(Tile_X6Y3_E1BEG),
     .E2MID(Tile_X6Y3_E2BEG),
     .E2END(Tile_X6Y3_E2BEGb),
@@ -5227,7 +5227,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y3_W2BEGb),
     .WW4BEG(Tile_X7Y3_WW4BEG),
     .W6BEG(Tile_X7Y3_W6BEG),
-    .CO(Tile_X7Y3_CO),
+    .Co(Tile_X7Y3_Co),
     .FrameData(Tile_X6Y3_FrameData_O),
     .FrameData_O(Tile_X7Y3_FrameData_O),
     .FrameStrobe(Tile_X7Y4_FrameStrobe_O),
@@ -5237,7 +5237,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y3_Emulate_Bitstream)
@@ -5304,7 +5304,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y4_Emulate_Bitstream)
@@ -5363,7 +5363,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y4_Emulate_Bitstream)
@@ -5377,7 +5377,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y5_N2BEGb),
     .N4END(Tile_X1Y5_N4BEG),
     .NN4END(Tile_X1Y5_NN4BEG),
-    .CI(Tile_X1Y5_CO),
+    .Ci(Tile_X1Y5_Co),
     .E1END(Tile_X0Y4_E1BEG),
     .E2MID(Tile_X0Y4_E2BEG),
     .E2END(Tile_X0Y4_E2BEGb),
@@ -5414,7 +5414,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y4_W2BEGb),
     .WW4BEG(Tile_X1Y4_WW4BEG),
     .W6BEG(Tile_X1Y4_W6BEG),
-    .CO(Tile_X1Y4_CO),
+    .Co(Tile_X1Y4_Co),
     .FrameData(Tile_X0Y4_FrameData_O),
     .FrameData_O(Tile_X1Y4_FrameData_O),
     .FrameStrobe(Tile_X1Y5_FrameStrobe_O),
@@ -5424,7 +5424,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y4_Emulate_Bitstream)
@@ -5438,7 +5438,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y5_N2BEGb),
     .N4END(Tile_X2Y5_N4BEG),
     .NN4END(Tile_X2Y5_NN4BEG),
-    .CI(Tile_X2Y5_CO),
+    .Ci(Tile_X2Y5_Co),
     .E1END(Tile_X1Y4_E1BEG),
     .E2MID(Tile_X1Y4_E2BEG),
     .E2END(Tile_X1Y4_E2BEGb),
@@ -5475,7 +5475,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y4_W2BEGb),
     .WW4BEG(Tile_X2Y4_WW4BEG),
     .W6BEG(Tile_X2Y4_W6BEG),
-    .CO(Tile_X2Y4_CO),
+    .Co(Tile_X2Y4_Co),
     .FrameData(Tile_X1Y4_FrameData_O),
     .FrameData_O(Tile_X2Y4_FrameData_O),
     .FrameStrobe(Tile_X2Y5_FrameStrobe_O),
@@ -5485,7 +5485,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y4_Emulate_Bitstream)
@@ -5544,7 +5544,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y4_Emulate_Bitstream)
@@ -5558,7 +5558,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y5_N2BEGb),
     .N4END(Tile_X4Y5_N4BEG),
     .NN4END(Tile_X4Y5_NN4BEG),
-    .CI(Tile_X4Y5_CO),
+    .Ci(Tile_X4Y5_Co),
     .E1END(Tile_X3Y4_E1BEG),
     .E2MID(Tile_X3Y4_E2BEG),
     .E2END(Tile_X3Y4_E2BEGb),
@@ -5595,7 +5595,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y4_W2BEGb),
     .WW4BEG(Tile_X4Y4_WW4BEG),
     .W6BEG(Tile_X4Y4_W6BEG),
-    .CO(Tile_X4Y4_CO),
+    .Co(Tile_X4Y4_Co),
     .FrameData(Tile_X3Y4_FrameData_O),
     .FrameData_O(Tile_X4Y4_FrameData_O),
     .FrameStrobe(Tile_X4Y5_FrameStrobe_O),
@@ -5605,7 +5605,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y4_Emulate_Bitstream)
@@ -5619,7 +5619,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y5_N2BEGb),
     .N4END(Tile_X5Y5_N4BEG),
     .NN4END(Tile_X5Y5_NN4BEG),
-    .CI(Tile_X5Y5_CO),
+    .Ci(Tile_X5Y5_Co),
     .E1END(Tile_X4Y4_E1BEG),
     .E2MID(Tile_X4Y4_E2BEG),
     .E2END(Tile_X4Y4_E2BEGb),
@@ -5656,7 +5656,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y4_W2BEGb),
     .WW4BEG(Tile_X5Y4_WW4BEG),
     .W6BEG(Tile_X5Y4_W6BEG),
-    .CO(Tile_X5Y4_CO),
+    .Co(Tile_X5Y4_Co),
     .FrameData(Tile_X4Y4_FrameData_O),
     .FrameData_O(Tile_X5Y4_FrameData_O),
     .FrameStrobe(Tile_X5Y5_FrameStrobe_O),
@@ -5666,7 +5666,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y4_Emulate_Bitstream)
@@ -5680,7 +5680,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y5_N2BEGb),
     .N4END(Tile_X6Y5_N4BEG),
     .NN4END(Tile_X6Y5_NN4BEG),
-    .CI(Tile_X6Y5_CO),
+    .Ci(Tile_X6Y5_Co),
     .E1END(Tile_X5Y4_E1BEG),
     .E2MID(Tile_X5Y4_E2BEG),
     .E2END(Tile_X5Y4_E2BEGb),
@@ -5717,7 +5717,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y4_W2BEGb),
     .WW4BEG(Tile_X6Y4_WW4BEG),
     .W6BEG(Tile_X6Y4_W6BEG),
-    .CO(Tile_X6Y4_CO),
+    .Co(Tile_X6Y4_Co),
     .FrameData(Tile_X5Y4_FrameData_O),
     .FrameData_O(Tile_X6Y4_FrameData_O),
     .FrameStrobe(Tile_X6Y5_FrameStrobe_O),
@@ -5727,7 +5727,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y4_Emulate_Bitstream)
@@ -5741,7 +5741,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y5_N2BEGb),
     .N4END(Tile_X7Y5_N4BEG),
     .NN4END(Tile_X7Y5_NN4BEG),
-    .CI(Tile_X7Y5_CO),
+    .Ci(Tile_X7Y5_Co),
     .E1END(Tile_X6Y4_E1BEG),
     .E2MID(Tile_X6Y4_E2BEG),
     .E2END(Tile_X6Y4_E2BEGb),
@@ -5778,7 +5778,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y4_W2BEGb),
     .WW4BEG(Tile_X7Y4_WW4BEG),
     .W6BEG(Tile_X7Y4_W6BEG),
-    .CO(Tile_X7Y4_CO),
+    .Co(Tile_X7Y4_Co),
     .FrameData(Tile_X6Y4_FrameData_O),
     .FrameData_O(Tile_X7Y4_FrameData_O),
     .FrameStrobe(Tile_X7Y5_FrameStrobe_O),
@@ -5788,7 +5788,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y4_Emulate_Bitstream)
@@ -5855,7 +5855,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y5_Emulate_Bitstream)
@@ -5914,7 +5914,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y5_Emulate_Bitstream)
@@ -5928,7 +5928,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y6_N2BEGb),
     .N4END(Tile_X1Y6_N4BEG),
     .NN4END(Tile_X1Y6_NN4BEG),
-    .CI(Tile_X1Y6_CO),
+    .Ci(Tile_X1Y6_Co),
     .E1END(Tile_X0Y5_E1BEG),
     .E2MID(Tile_X0Y5_E2BEG),
     .E2END(Tile_X0Y5_E2BEGb),
@@ -5965,7 +5965,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y5_W2BEGb),
     .WW4BEG(Tile_X1Y5_WW4BEG),
     .W6BEG(Tile_X1Y5_W6BEG),
-    .CO(Tile_X1Y5_CO),
+    .Co(Tile_X1Y5_Co),
     .FrameData(Tile_X0Y5_FrameData_O),
     .FrameData_O(Tile_X1Y5_FrameData_O),
     .FrameStrobe(Tile_X1Y6_FrameStrobe_O),
@@ -5975,7 +5975,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y5_Emulate_Bitstream)
@@ -5989,7 +5989,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y6_N2BEGb),
     .N4END(Tile_X2Y6_N4BEG),
     .NN4END(Tile_X2Y6_NN4BEG),
-    .CI(Tile_X2Y6_CO),
+    .Ci(Tile_X2Y6_Co),
     .E1END(Tile_X1Y5_E1BEG),
     .E2MID(Tile_X1Y5_E2BEG),
     .E2END(Tile_X1Y5_E2BEGb),
@@ -6026,7 +6026,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y5_W2BEGb),
     .WW4BEG(Tile_X2Y5_WW4BEG),
     .W6BEG(Tile_X2Y5_W6BEG),
-    .CO(Tile_X2Y5_CO),
+    .Co(Tile_X2Y5_Co),
     .FrameData(Tile_X1Y5_FrameData_O),
     .FrameData_O(Tile_X2Y5_FrameData_O),
     .FrameStrobe(Tile_X2Y6_FrameStrobe_O),
@@ -6036,7 +6036,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y5_Emulate_Bitstream)
@@ -6095,7 +6095,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y5_Emulate_Bitstream)
@@ -6109,7 +6109,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y6_N2BEGb),
     .N4END(Tile_X4Y6_N4BEG),
     .NN4END(Tile_X4Y6_NN4BEG),
-    .CI(Tile_X4Y6_CO),
+    .Ci(Tile_X4Y6_Co),
     .E1END(Tile_X3Y5_E1BEG),
     .E2MID(Tile_X3Y5_E2BEG),
     .E2END(Tile_X3Y5_E2BEGb),
@@ -6146,7 +6146,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y5_W2BEGb),
     .WW4BEG(Tile_X4Y5_WW4BEG),
     .W6BEG(Tile_X4Y5_W6BEG),
-    .CO(Tile_X4Y5_CO),
+    .Co(Tile_X4Y5_Co),
     .FrameData(Tile_X3Y5_FrameData_O),
     .FrameData_O(Tile_X4Y5_FrameData_O),
     .FrameStrobe(Tile_X4Y6_FrameStrobe_O),
@@ -6156,7 +6156,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y5_Emulate_Bitstream)
@@ -6170,7 +6170,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y6_N2BEGb),
     .N4END(Tile_X5Y6_N4BEG),
     .NN4END(Tile_X5Y6_NN4BEG),
-    .CI(Tile_X5Y6_CO),
+    .Ci(Tile_X5Y6_Co),
     .E1END(Tile_X4Y5_E1BEG),
     .E2MID(Tile_X4Y5_E2BEG),
     .E2END(Tile_X4Y5_E2BEGb),
@@ -6207,7 +6207,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y5_W2BEGb),
     .WW4BEG(Tile_X5Y5_WW4BEG),
     .W6BEG(Tile_X5Y5_W6BEG),
-    .CO(Tile_X5Y5_CO),
+    .Co(Tile_X5Y5_Co),
     .FrameData(Tile_X4Y5_FrameData_O),
     .FrameData_O(Tile_X5Y5_FrameData_O),
     .FrameStrobe(Tile_X5Y6_FrameStrobe_O),
@@ -6217,7 +6217,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y5_Emulate_Bitstream)
@@ -6231,7 +6231,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y6_N2BEGb),
     .N4END(Tile_X6Y6_N4BEG),
     .NN4END(Tile_X6Y6_NN4BEG),
-    .CI(Tile_X6Y6_CO),
+    .Ci(Tile_X6Y6_Co),
     .E1END(Tile_X5Y5_E1BEG),
     .E2MID(Tile_X5Y5_E2BEG),
     .E2END(Tile_X5Y5_E2BEGb),
@@ -6268,7 +6268,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y5_W2BEGb),
     .WW4BEG(Tile_X6Y5_WW4BEG),
     .W6BEG(Tile_X6Y5_W6BEG),
-    .CO(Tile_X6Y5_CO),
+    .Co(Tile_X6Y5_Co),
     .FrameData(Tile_X5Y5_FrameData_O),
     .FrameData_O(Tile_X6Y5_FrameData_O),
     .FrameStrobe(Tile_X6Y6_FrameStrobe_O),
@@ -6278,7 +6278,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y5_Emulate_Bitstream)
@@ -6292,7 +6292,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y6_N2BEGb),
     .N4END(Tile_X7Y6_N4BEG),
     .NN4END(Tile_X7Y6_NN4BEG),
-    .CI(Tile_X7Y6_CO),
+    .Ci(Tile_X7Y6_Co),
     .E1END(Tile_X6Y5_E1BEG),
     .E2MID(Tile_X6Y5_E2BEG),
     .E2END(Tile_X6Y5_E2BEGb),
@@ -6329,7 +6329,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y5_W2BEGb),
     .WW4BEG(Tile_X7Y5_WW4BEG),
     .W6BEG(Tile_X7Y5_W6BEG),
-    .CO(Tile_X7Y5_CO),
+    .Co(Tile_X7Y5_Co),
     .FrameData(Tile_X6Y5_FrameData_O),
     .FrameData_O(Tile_X7Y5_FrameData_O),
     .FrameStrobe(Tile_X7Y6_FrameStrobe_O),
@@ -6339,7 +6339,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y5_Emulate_Bitstream)
@@ -6406,7 +6406,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y6_Emulate_Bitstream)
@@ -6465,7 +6465,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y6_Emulate_Bitstream)
@@ -6479,7 +6479,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y7_N2BEGb),
     .N4END(Tile_X1Y7_N4BEG),
     .NN4END(Tile_X1Y7_NN4BEG),
-    .CI(Tile_X1Y7_CO),
+    .Ci(Tile_X1Y7_Co),
     .E1END(Tile_X0Y6_E1BEG),
     .E2MID(Tile_X0Y6_E2BEG),
     .E2END(Tile_X0Y6_E2BEGb),
@@ -6516,7 +6516,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y6_W2BEGb),
     .WW4BEG(Tile_X1Y6_WW4BEG),
     .W6BEG(Tile_X1Y6_W6BEG),
-    .CO(Tile_X1Y6_CO),
+    .Co(Tile_X1Y6_Co),
     .FrameData(Tile_X0Y6_FrameData_O),
     .FrameData_O(Tile_X1Y6_FrameData_O),
     .FrameStrobe(Tile_X1Y7_FrameStrobe_O),
@@ -6526,7 +6526,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y6_Emulate_Bitstream)
@@ -6540,7 +6540,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y7_N2BEGb),
     .N4END(Tile_X2Y7_N4BEG),
     .NN4END(Tile_X2Y7_NN4BEG),
-    .CI(Tile_X2Y7_CO),
+    .Ci(Tile_X2Y7_Co),
     .E1END(Tile_X1Y6_E1BEG),
     .E2MID(Tile_X1Y6_E2BEG),
     .E2END(Tile_X1Y6_E2BEGb),
@@ -6577,7 +6577,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y6_W2BEGb),
     .WW4BEG(Tile_X2Y6_WW4BEG),
     .W6BEG(Tile_X2Y6_W6BEG),
-    .CO(Tile_X2Y6_CO),
+    .Co(Tile_X2Y6_Co),
     .FrameData(Tile_X1Y6_FrameData_O),
     .FrameData_O(Tile_X2Y6_FrameData_O),
     .FrameStrobe(Tile_X2Y7_FrameStrobe_O),
@@ -6587,7 +6587,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y6_Emulate_Bitstream)
@@ -6646,7 +6646,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y6_Emulate_Bitstream)
@@ -6660,7 +6660,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y7_N2BEGb),
     .N4END(Tile_X4Y7_N4BEG),
     .NN4END(Tile_X4Y7_NN4BEG),
-    .CI(Tile_X4Y7_CO),
+    .Ci(Tile_X4Y7_Co),
     .E1END(Tile_X3Y6_E1BEG),
     .E2MID(Tile_X3Y6_E2BEG),
     .E2END(Tile_X3Y6_E2BEGb),
@@ -6697,7 +6697,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y6_W2BEGb),
     .WW4BEG(Tile_X4Y6_WW4BEG),
     .W6BEG(Tile_X4Y6_W6BEG),
-    .CO(Tile_X4Y6_CO),
+    .Co(Tile_X4Y6_Co),
     .FrameData(Tile_X3Y6_FrameData_O),
     .FrameData_O(Tile_X4Y6_FrameData_O),
     .FrameStrobe(Tile_X4Y7_FrameStrobe_O),
@@ -6707,7 +6707,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y6_Emulate_Bitstream)
@@ -6721,7 +6721,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y7_N2BEGb),
     .N4END(Tile_X5Y7_N4BEG),
     .NN4END(Tile_X5Y7_NN4BEG),
-    .CI(Tile_X5Y7_CO),
+    .Ci(Tile_X5Y7_Co),
     .E1END(Tile_X4Y6_E1BEG),
     .E2MID(Tile_X4Y6_E2BEG),
     .E2END(Tile_X4Y6_E2BEGb),
@@ -6758,7 +6758,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y6_W2BEGb),
     .WW4BEG(Tile_X5Y6_WW4BEG),
     .W6BEG(Tile_X5Y6_W6BEG),
-    .CO(Tile_X5Y6_CO),
+    .Co(Tile_X5Y6_Co),
     .FrameData(Tile_X4Y6_FrameData_O),
     .FrameData_O(Tile_X5Y6_FrameData_O),
     .FrameStrobe(Tile_X5Y7_FrameStrobe_O),
@@ -6768,7 +6768,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y6_Emulate_Bitstream)
@@ -6782,7 +6782,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y7_N2BEGb),
     .N4END(Tile_X6Y7_N4BEG),
     .NN4END(Tile_X6Y7_NN4BEG),
-    .CI(Tile_X6Y7_CO),
+    .Ci(Tile_X6Y7_Co),
     .E1END(Tile_X5Y6_E1BEG),
     .E2MID(Tile_X5Y6_E2BEG),
     .E2END(Tile_X5Y6_E2BEGb),
@@ -6819,7 +6819,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y6_W2BEGb),
     .WW4BEG(Tile_X6Y6_WW4BEG),
     .W6BEG(Tile_X6Y6_W6BEG),
-    .CO(Tile_X6Y6_CO),
+    .Co(Tile_X6Y6_Co),
     .FrameData(Tile_X5Y6_FrameData_O),
     .FrameData_O(Tile_X6Y6_FrameData_O),
     .FrameStrobe(Tile_X6Y7_FrameStrobe_O),
@@ -6829,7 +6829,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y6_Emulate_Bitstream)
@@ -6843,7 +6843,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y7_N2BEGb),
     .N4END(Tile_X7Y7_N4BEG),
     .NN4END(Tile_X7Y7_NN4BEG),
-    .CI(Tile_X7Y7_CO),
+    .Ci(Tile_X7Y7_Co),
     .E1END(Tile_X6Y6_E1BEG),
     .E2MID(Tile_X6Y6_E2BEG),
     .E2END(Tile_X6Y6_E2BEGb),
@@ -6880,7 +6880,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y6_W2BEGb),
     .WW4BEG(Tile_X7Y6_WW4BEG),
     .W6BEG(Tile_X7Y6_W6BEG),
-    .CO(Tile_X7Y6_CO),
+    .Co(Tile_X7Y6_Co),
     .FrameData(Tile_X6Y6_FrameData_O),
     .FrameData_O(Tile_X7Y6_FrameData_O),
     .FrameStrobe(Tile_X7Y7_FrameStrobe_O),
@@ -6890,7 +6890,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y6_Emulate_Bitstream)
@@ -6957,7 +6957,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y7_Emulate_Bitstream)
@@ -7016,7 +7016,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y7_Emulate_Bitstream)
@@ -7030,7 +7030,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y8_N2BEGb),
     .N4END(Tile_X1Y8_N4BEG),
     .NN4END(Tile_X1Y8_NN4BEG),
-    .CI(Tile_X1Y8_CO),
+    .Ci(Tile_X1Y8_Co),
     .E1END(Tile_X0Y7_E1BEG),
     .E2MID(Tile_X0Y7_E2BEG),
     .E2END(Tile_X0Y7_E2BEGb),
@@ -7067,7 +7067,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y7_W2BEGb),
     .WW4BEG(Tile_X1Y7_WW4BEG),
     .W6BEG(Tile_X1Y7_W6BEG),
-    .CO(Tile_X1Y7_CO),
+    .Co(Tile_X1Y7_Co),
     .FrameData(Tile_X0Y7_FrameData_O),
     .FrameData_O(Tile_X1Y7_FrameData_O),
     .FrameStrobe(Tile_X1Y8_FrameStrobe_O),
@@ -7077,7 +7077,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y7_Emulate_Bitstream)
@@ -7091,7 +7091,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y8_N2BEGb),
     .N4END(Tile_X2Y8_N4BEG),
     .NN4END(Tile_X2Y8_NN4BEG),
-    .CI(Tile_X2Y8_CO),
+    .Ci(Tile_X2Y8_Co),
     .E1END(Tile_X1Y7_E1BEG),
     .E2MID(Tile_X1Y7_E2BEG),
     .E2END(Tile_X1Y7_E2BEGb),
@@ -7128,7 +7128,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y7_W2BEGb),
     .WW4BEG(Tile_X2Y7_WW4BEG),
     .W6BEG(Tile_X2Y7_W6BEG),
-    .CO(Tile_X2Y7_CO),
+    .Co(Tile_X2Y7_Co),
     .FrameData(Tile_X1Y7_FrameData_O),
     .FrameData_O(Tile_X2Y7_FrameData_O),
     .FrameStrobe(Tile_X2Y8_FrameStrobe_O),
@@ -7138,7 +7138,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y7_Emulate_Bitstream)
@@ -7197,7 +7197,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y7_Emulate_Bitstream)
@@ -7211,7 +7211,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y8_N2BEGb),
     .N4END(Tile_X4Y8_N4BEG),
     .NN4END(Tile_X4Y8_NN4BEG),
-    .CI(Tile_X4Y8_CO),
+    .Ci(Tile_X4Y8_Co),
     .E1END(Tile_X3Y7_E1BEG),
     .E2MID(Tile_X3Y7_E2BEG),
     .E2END(Tile_X3Y7_E2BEGb),
@@ -7248,7 +7248,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y7_W2BEGb),
     .WW4BEG(Tile_X4Y7_WW4BEG),
     .W6BEG(Tile_X4Y7_W6BEG),
-    .CO(Tile_X4Y7_CO),
+    .Co(Tile_X4Y7_Co),
     .FrameData(Tile_X3Y7_FrameData_O),
     .FrameData_O(Tile_X4Y7_FrameData_O),
     .FrameStrobe(Tile_X4Y8_FrameStrobe_O),
@@ -7258,7 +7258,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y7_Emulate_Bitstream)
@@ -7272,7 +7272,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y8_N2BEGb),
     .N4END(Tile_X5Y8_N4BEG),
     .NN4END(Tile_X5Y8_NN4BEG),
-    .CI(Tile_X5Y8_CO),
+    .Ci(Tile_X5Y8_Co),
     .E1END(Tile_X4Y7_E1BEG),
     .E2MID(Tile_X4Y7_E2BEG),
     .E2END(Tile_X4Y7_E2BEGb),
@@ -7309,7 +7309,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y7_W2BEGb),
     .WW4BEG(Tile_X5Y7_WW4BEG),
     .W6BEG(Tile_X5Y7_W6BEG),
-    .CO(Tile_X5Y7_CO),
+    .Co(Tile_X5Y7_Co),
     .FrameData(Tile_X4Y7_FrameData_O),
     .FrameData_O(Tile_X5Y7_FrameData_O),
     .FrameStrobe(Tile_X5Y8_FrameStrobe_O),
@@ -7319,7 +7319,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y7_Emulate_Bitstream)
@@ -7333,7 +7333,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y8_N2BEGb),
     .N4END(Tile_X6Y8_N4BEG),
     .NN4END(Tile_X6Y8_NN4BEG),
-    .CI(Tile_X6Y8_CO),
+    .Ci(Tile_X6Y8_Co),
     .E1END(Tile_X5Y7_E1BEG),
     .E2MID(Tile_X5Y7_E2BEG),
     .E2END(Tile_X5Y7_E2BEGb),
@@ -7370,7 +7370,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y7_W2BEGb),
     .WW4BEG(Tile_X6Y7_WW4BEG),
     .W6BEG(Tile_X6Y7_W6BEG),
-    .CO(Tile_X6Y7_CO),
+    .Co(Tile_X6Y7_Co),
     .FrameData(Tile_X5Y7_FrameData_O),
     .FrameData_O(Tile_X6Y7_FrameData_O),
     .FrameStrobe(Tile_X6Y8_FrameStrobe_O),
@@ -7380,7 +7380,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y7_Emulate_Bitstream)
@@ -7394,7 +7394,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y8_N2BEGb),
     .N4END(Tile_X7Y8_N4BEG),
     .NN4END(Tile_X7Y8_NN4BEG),
-    .CI(Tile_X7Y8_CO),
+    .Ci(Tile_X7Y8_Co),
     .E1END(Tile_X6Y7_E1BEG),
     .E2MID(Tile_X6Y7_E2BEG),
     .E2END(Tile_X6Y7_E2BEGb),
@@ -7431,7 +7431,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y7_W2BEGb),
     .WW4BEG(Tile_X7Y7_WW4BEG),
     .W6BEG(Tile_X7Y7_W6BEG),
-    .CO(Tile_X7Y7_CO),
+    .Co(Tile_X7Y7_Co),
     .FrameData(Tile_X6Y7_FrameData_O),
     .FrameData_O(Tile_X7Y7_FrameData_O),
     .FrameStrobe(Tile_X7Y8_FrameStrobe_O),
@@ -7441,7 +7441,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y7_Emulate_Bitstream)
@@ -7508,7 +7508,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y8_Emulate_Bitstream)
@@ -7567,7 +7567,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y8_Emulate_Bitstream)
@@ -7581,7 +7581,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y9_N2BEGb),
     .N4END(Tile_X1Y9_N4BEG),
     .NN4END(Tile_X1Y9_NN4BEG),
-    .CI(Tile_X1Y9_CO),
+    .Ci(Tile_X1Y9_Co),
     .E1END(Tile_X0Y8_E1BEG),
     .E2MID(Tile_X0Y8_E2BEG),
     .E2END(Tile_X0Y8_E2BEGb),
@@ -7618,7 +7618,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y8_W2BEGb),
     .WW4BEG(Tile_X1Y8_WW4BEG),
     .W6BEG(Tile_X1Y8_W6BEG),
-    .CO(Tile_X1Y8_CO),
+    .Co(Tile_X1Y8_Co),
     .FrameData(Tile_X0Y8_FrameData_O),
     .FrameData_O(Tile_X1Y8_FrameData_O),
     .FrameStrobe(Tile_X1Y9_FrameStrobe_O),
@@ -7628,7 +7628,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y8_Emulate_Bitstream)
@@ -7642,7 +7642,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y9_N2BEGb),
     .N4END(Tile_X2Y9_N4BEG),
     .NN4END(Tile_X2Y9_NN4BEG),
-    .CI(Tile_X2Y9_CO),
+    .Ci(Tile_X2Y9_Co),
     .E1END(Tile_X1Y8_E1BEG),
     .E2MID(Tile_X1Y8_E2BEG),
     .E2END(Tile_X1Y8_E2BEGb),
@@ -7679,7 +7679,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y8_W2BEGb),
     .WW4BEG(Tile_X2Y8_WW4BEG),
     .W6BEG(Tile_X2Y8_W6BEG),
-    .CO(Tile_X2Y8_CO),
+    .Co(Tile_X2Y8_Co),
     .FrameData(Tile_X1Y8_FrameData_O),
     .FrameData_O(Tile_X2Y8_FrameData_O),
     .FrameStrobe(Tile_X2Y9_FrameStrobe_O),
@@ -7689,7 +7689,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y8_Emulate_Bitstream)
@@ -7748,7 +7748,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y8_Emulate_Bitstream)
@@ -7762,7 +7762,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y9_N2BEGb),
     .N4END(Tile_X4Y9_N4BEG),
     .NN4END(Tile_X4Y9_NN4BEG),
-    .CI(Tile_X4Y9_CO),
+    .Ci(Tile_X4Y9_Co),
     .E1END(Tile_X3Y8_E1BEG),
     .E2MID(Tile_X3Y8_E2BEG),
     .E2END(Tile_X3Y8_E2BEGb),
@@ -7799,7 +7799,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y8_W2BEGb),
     .WW4BEG(Tile_X4Y8_WW4BEG),
     .W6BEG(Tile_X4Y8_W6BEG),
-    .CO(Tile_X4Y8_CO),
+    .Co(Tile_X4Y8_Co),
     .FrameData(Tile_X3Y8_FrameData_O),
     .FrameData_O(Tile_X4Y8_FrameData_O),
     .FrameStrobe(Tile_X4Y9_FrameStrobe_O),
@@ -7809,7 +7809,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y8_Emulate_Bitstream)
@@ -7823,7 +7823,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y9_N2BEGb),
     .N4END(Tile_X5Y9_N4BEG),
     .NN4END(Tile_X5Y9_NN4BEG),
-    .CI(Tile_X5Y9_CO),
+    .Ci(Tile_X5Y9_Co),
     .E1END(Tile_X4Y8_E1BEG),
     .E2MID(Tile_X4Y8_E2BEG),
     .E2END(Tile_X4Y8_E2BEGb),
@@ -7860,7 +7860,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y8_W2BEGb),
     .WW4BEG(Tile_X5Y8_WW4BEG),
     .W6BEG(Tile_X5Y8_W6BEG),
-    .CO(Tile_X5Y8_CO),
+    .Co(Tile_X5Y8_Co),
     .FrameData(Tile_X4Y8_FrameData_O),
     .FrameData_O(Tile_X5Y8_FrameData_O),
     .FrameStrobe(Tile_X5Y9_FrameStrobe_O),
@@ -7870,7 +7870,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y8_Emulate_Bitstream)
@@ -7884,7 +7884,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y9_N2BEGb),
     .N4END(Tile_X6Y9_N4BEG),
     .NN4END(Tile_X6Y9_NN4BEG),
-    .CI(Tile_X6Y9_CO),
+    .Ci(Tile_X6Y9_Co),
     .E1END(Tile_X5Y8_E1BEG),
     .E2MID(Tile_X5Y8_E2BEG),
     .E2END(Tile_X5Y8_E2BEGb),
@@ -7921,7 +7921,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y8_W2BEGb),
     .WW4BEG(Tile_X6Y8_WW4BEG),
     .W6BEG(Tile_X6Y8_W6BEG),
-    .CO(Tile_X6Y8_CO),
+    .Co(Tile_X6Y8_Co),
     .FrameData(Tile_X5Y8_FrameData_O),
     .FrameData_O(Tile_X6Y8_FrameData_O),
     .FrameStrobe(Tile_X6Y9_FrameStrobe_O),
@@ -7931,7 +7931,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y8_Emulate_Bitstream)
@@ -7945,7 +7945,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y9_N2BEGb),
     .N4END(Tile_X7Y9_N4BEG),
     .NN4END(Tile_X7Y9_NN4BEG),
-    .CI(Tile_X7Y9_CO),
+    .Ci(Tile_X7Y9_Co),
     .E1END(Tile_X6Y8_E1BEG),
     .E2MID(Tile_X6Y8_E2BEG),
     .E2END(Tile_X6Y8_E2BEGb),
@@ -7982,7 +7982,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y8_W2BEGb),
     .WW4BEG(Tile_X7Y8_WW4BEG),
     .W6BEG(Tile_X7Y8_W6BEG),
-    .CO(Tile_X7Y8_CO),
+    .Co(Tile_X7Y8_Co),
     .FrameData(Tile_X6Y8_FrameData_O),
     .FrameData_O(Tile_X7Y8_FrameData_O),
     .FrameStrobe(Tile_X7Y9_FrameStrobe_O),
@@ -7992,7 +7992,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y8_Emulate_Bitstream)
@@ -8059,7 +8059,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y9_Emulate_Bitstream)
@@ -8118,7 +8118,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y9_Emulate_Bitstream)
@@ -8132,7 +8132,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y10_N2BEGb),
     .N4END(Tile_X1Y10_N4BEG),
     .NN4END(Tile_X1Y10_NN4BEG),
-    .CI(Tile_X1Y10_CO),
+    .Ci(Tile_X1Y10_Co),
     .E1END(Tile_X0Y9_E1BEG),
     .E2MID(Tile_X0Y9_E2BEG),
     .E2END(Tile_X0Y9_E2BEGb),
@@ -8169,7 +8169,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y9_W2BEGb),
     .WW4BEG(Tile_X1Y9_WW4BEG),
     .W6BEG(Tile_X1Y9_W6BEG),
-    .CO(Tile_X1Y9_CO),
+    .Co(Tile_X1Y9_Co),
     .FrameData(Tile_X0Y9_FrameData_O),
     .FrameData_O(Tile_X1Y9_FrameData_O),
     .FrameStrobe(Tile_X1Y10_FrameStrobe_O),
@@ -8179,7 +8179,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y9_Emulate_Bitstream)
@@ -8193,7 +8193,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y10_N2BEGb),
     .N4END(Tile_X2Y10_N4BEG),
     .NN4END(Tile_X2Y10_NN4BEG),
-    .CI(Tile_X2Y10_CO),
+    .Ci(Tile_X2Y10_Co),
     .E1END(Tile_X1Y9_E1BEG),
     .E2MID(Tile_X1Y9_E2BEG),
     .E2END(Tile_X1Y9_E2BEGb),
@@ -8230,7 +8230,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y9_W2BEGb),
     .WW4BEG(Tile_X2Y9_WW4BEG),
     .W6BEG(Tile_X2Y9_W6BEG),
-    .CO(Tile_X2Y9_CO),
+    .Co(Tile_X2Y9_Co),
     .FrameData(Tile_X1Y9_FrameData_O),
     .FrameData_O(Tile_X2Y9_FrameData_O),
     .FrameStrobe(Tile_X2Y10_FrameStrobe_O),
@@ -8240,7 +8240,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y9_Emulate_Bitstream)
@@ -8299,7 +8299,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y9_Emulate_Bitstream)
@@ -8313,7 +8313,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y10_N2BEGb),
     .N4END(Tile_X4Y10_N4BEG),
     .NN4END(Tile_X4Y10_NN4BEG),
-    .CI(Tile_X4Y10_CO),
+    .Ci(Tile_X4Y10_Co),
     .E1END(Tile_X3Y9_E1BEG),
     .E2MID(Tile_X3Y9_E2BEG),
     .E2END(Tile_X3Y9_E2BEGb),
@@ -8350,7 +8350,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y9_W2BEGb),
     .WW4BEG(Tile_X4Y9_WW4BEG),
     .W6BEG(Tile_X4Y9_W6BEG),
-    .CO(Tile_X4Y9_CO),
+    .Co(Tile_X4Y9_Co),
     .FrameData(Tile_X3Y9_FrameData_O),
     .FrameData_O(Tile_X4Y9_FrameData_O),
     .FrameStrobe(Tile_X4Y10_FrameStrobe_O),
@@ -8360,7 +8360,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y9_Emulate_Bitstream)
@@ -8374,7 +8374,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y10_N2BEGb),
     .N4END(Tile_X5Y10_N4BEG),
     .NN4END(Tile_X5Y10_NN4BEG),
-    .CI(Tile_X5Y10_CO),
+    .Ci(Tile_X5Y10_Co),
     .E1END(Tile_X4Y9_E1BEG),
     .E2MID(Tile_X4Y9_E2BEG),
     .E2END(Tile_X4Y9_E2BEGb),
@@ -8411,7 +8411,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y9_W2BEGb),
     .WW4BEG(Tile_X5Y9_WW4BEG),
     .W6BEG(Tile_X5Y9_W6BEG),
-    .CO(Tile_X5Y9_CO),
+    .Co(Tile_X5Y9_Co),
     .FrameData(Tile_X4Y9_FrameData_O),
     .FrameData_O(Tile_X5Y9_FrameData_O),
     .FrameStrobe(Tile_X5Y10_FrameStrobe_O),
@@ -8421,7 +8421,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y9_Emulate_Bitstream)
@@ -8435,7 +8435,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y10_N2BEGb),
     .N4END(Tile_X6Y10_N4BEG),
     .NN4END(Tile_X6Y10_NN4BEG),
-    .CI(Tile_X6Y10_CO),
+    .Ci(Tile_X6Y10_Co),
     .E1END(Tile_X5Y9_E1BEG),
     .E2MID(Tile_X5Y9_E2BEG),
     .E2END(Tile_X5Y9_E2BEGb),
@@ -8472,7 +8472,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y9_W2BEGb),
     .WW4BEG(Tile_X6Y9_WW4BEG),
     .W6BEG(Tile_X6Y9_W6BEG),
-    .CO(Tile_X6Y9_CO),
+    .Co(Tile_X6Y9_Co),
     .FrameData(Tile_X5Y9_FrameData_O),
     .FrameData_O(Tile_X6Y9_FrameData_O),
     .FrameStrobe(Tile_X6Y10_FrameStrobe_O),
@@ -8482,7 +8482,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y9_Emulate_Bitstream)
@@ -8496,7 +8496,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y10_N2BEGb),
     .N4END(Tile_X7Y10_N4BEG),
     .NN4END(Tile_X7Y10_NN4BEG),
-    .CI(Tile_X7Y10_CO),
+    .Ci(Tile_X7Y10_Co),
     .E1END(Tile_X6Y9_E1BEG),
     .E2MID(Tile_X6Y9_E2BEG),
     .E2END(Tile_X6Y9_E2BEGb),
@@ -8533,7 +8533,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y9_W2BEGb),
     .WW4BEG(Tile_X7Y9_WW4BEG),
     .W6BEG(Tile_X7Y9_W6BEG),
-    .CO(Tile_X7Y9_CO),
+    .Co(Tile_X7Y9_Co),
     .FrameData(Tile_X6Y9_FrameData_O),
     .FrameData_O(Tile_X7Y9_FrameData_O),
     .FrameStrobe(Tile_X7Y10_FrameStrobe_O),
@@ -8543,7 +8543,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y9_Emulate_Bitstream)
@@ -8610,7 +8610,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y10_Emulate_Bitstream)
@@ -8669,7 +8669,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y10_Emulate_Bitstream)
@@ -8683,7 +8683,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y11_N2BEGb),
     .N4END(Tile_X1Y11_N4BEG),
     .NN4END(Tile_X1Y11_NN4BEG),
-    .CI(Tile_X1Y11_CO),
+    .Ci(Tile_X1Y11_Co),
     .E1END(Tile_X0Y10_E1BEG),
     .E2MID(Tile_X0Y10_E2BEG),
     .E2END(Tile_X0Y10_E2BEGb),
@@ -8720,7 +8720,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y10_W2BEGb),
     .WW4BEG(Tile_X1Y10_WW4BEG),
     .W6BEG(Tile_X1Y10_W6BEG),
-    .CO(Tile_X1Y10_CO),
+    .Co(Tile_X1Y10_Co),
     .FrameData(Tile_X0Y10_FrameData_O),
     .FrameData_O(Tile_X1Y10_FrameData_O),
     .FrameStrobe(Tile_X1Y11_FrameStrobe_O),
@@ -8730,7 +8730,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y10_Emulate_Bitstream)
@@ -8744,7 +8744,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y11_N2BEGb),
     .N4END(Tile_X2Y11_N4BEG),
     .NN4END(Tile_X2Y11_NN4BEG),
-    .CI(Tile_X2Y11_CO),
+    .Ci(Tile_X2Y11_Co),
     .E1END(Tile_X1Y10_E1BEG),
     .E2MID(Tile_X1Y10_E2BEG),
     .E2END(Tile_X1Y10_E2BEGb),
@@ -8781,7 +8781,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y10_W2BEGb),
     .WW4BEG(Tile_X2Y10_WW4BEG),
     .W6BEG(Tile_X2Y10_W6BEG),
-    .CO(Tile_X2Y10_CO),
+    .Co(Tile_X2Y10_Co),
     .FrameData(Tile_X1Y10_FrameData_O),
     .FrameData_O(Tile_X2Y10_FrameData_O),
     .FrameStrobe(Tile_X2Y11_FrameStrobe_O),
@@ -8791,7 +8791,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y10_Emulate_Bitstream)
@@ -8850,7 +8850,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y10_Emulate_Bitstream)
@@ -8864,7 +8864,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y11_N2BEGb),
     .N4END(Tile_X4Y11_N4BEG),
     .NN4END(Tile_X4Y11_NN4BEG),
-    .CI(Tile_X4Y11_CO),
+    .Ci(Tile_X4Y11_Co),
     .E1END(Tile_X3Y10_E1BEG),
     .E2MID(Tile_X3Y10_E2BEG),
     .E2END(Tile_X3Y10_E2BEGb),
@@ -8901,7 +8901,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y10_W2BEGb),
     .WW4BEG(Tile_X4Y10_WW4BEG),
     .W6BEG(Tile_X4Y10_W6BEG),
-    .CO(Tile_X4Y10_CO),
+    .Co(Tile_X4Y10_Co),
     .FrameData(Tile_X3Y10_FrameData_O),
     .FrameData_O(Tile_X4Y10_FrameData_O),
     .FrameStrobe(Tile_X4Y11_FrameStrobe_O),
@@ -8911,7 +8911,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y10_Emulate_Bitstream)
@@ -8925,7 +8925,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y11_N2BEGb),
     .N4END(Tile_X5Y11_N4BEG),
     .NN4END(Tile_X5Y11_NN4BEG),
-    .CI(Tile_X5Y11_CO),
+    .Ci(Tile_X5Y11_Co),
     .E1END(Tile_X4Y10_E1BEG),
     .E2MID(Tile_X4Y10_E2BEG),
     .E2END(Tile_X4Y10_E2BEGb),
@@ -8962,7 +8962,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y10_W2BEGb),
     .WW4BEG(Tile_X5Y10_WW4BEG),
     .W6BEG(Tile_X5Y10_W6BEG),
-    .CO(Tile_X5Y10_CO),
+    .Co(Tile_X5Y10_Co),
     .FrameData(Tile_X4Y10_FrameData_O),
     .FrameData_O(Tile_X5Y10_FrameData_O),
     .FrameStrobe(Tile_X5Y11_FrameStrobe_O),
@@ -8972,7 +8972,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y10_Emulate_Bitstream)
@@ -8986,7 +8986,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y11_N2BEGb),
     .N4END(Tile_X6Y11_N4BEG),
     .NN4END(Tile_X6Y11_NN4BEG),
-    .CI(Tile_X6Y11_CO),
+    .Ci(Tile_X6Y11_Co),
     .E1END(Tile_X5Y10_E1BEG),
     .E2MID(Tile_X5Y10_E2BEG),
     .E2END(Tile_X5Y10_E2BEGb),
@@ -9023,7 +9023,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y10_W2BEGb),
     .WW4BEG(Tile_X6Y10_WW4BEG),
     .W6BEG(Tile_X6Y10_W6BEG),
-    .CO(Tile_X6Y10_CO),
+    .Co(Tile_X6Y10_Co),
     .FrameData(Tile_X5Y10_FrameData_O),
     .FrameData_O(Tile_X6Y10_FrameData_O),
     .FrameStrobe(Tile_X6Y11_FrameStrobe_O),
@@ -9033,7 +9033,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y10_Emulate_Bitstream)
@@ -9047,7 +9047,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y11_N2BEGb),
     .N4END(Tile_X7Y11_N4BEG),
     .NN4END(Tile_X7Y11_NN4BEG),
-    .CI(Tile_X7Y11_CO),
+    .Ci(Tile_X7Y11_Co),
     .E1END(Tile_X6Y10_E1BEG),
     .E2MID(Tile_X6Y10_E2BEG),
     .E2END(Tile_X6Y10_E2BEGb),
@@ -9084,7 +9084,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y10_W2BEGb),
     .WW4BEG(Tile_X7Y10_WW4BEG),
     .W6BEG(Tile_X7Y10_W6BEG),
-    .CO(Tile_X7Y10_CO),
+    .Co(Tile_X7Y10_Co),
     .FrameData(Tile_X6Y10_FrameData_O),
     .FrameData_O(Tile_X7Y10_FrameData_O),
     .FrameStrobe(Tile_X7Y11_FrameStrobe_O),
@@ -9094,7 +9094,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y10_Emulate_Bitstream)
@@ -9161,7 +9161,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y11_Emulate_Bitstream)
@@ -9220,7 +9220,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y11_Emulate_Bitstream)
@@ -9234,7 +9234,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y12_N2BEGb),
     .N4END(Tile_X1Y12_N4BEG),
     .NN4END(Tile_X1Y12_NN4BEG),
-    .CI(Tile_X1Y12_CO),
+    .Ci(Tile_X1Y12_Co),
     .E1END(Tile_X0Y11_E1BEG),
     .E2MID(Tile_X0Y11_E2BEG),
     .E2END(Tile_X0Y11_E2BEGb),
@@ -9271,7 +9271,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y11_W2BEGb),
     .WW4BEG(Tile_X1Y11_WW4BEG),
     .W6BEG(Tile_X1Y11_W6BEG),
-    .CO(Tile_X1Y11_CO),
+    .Co(Tile_X1Y11_Co),
     .FrameData(Tile_X0Y11_FrameData_O),
     .FrameData_O(Tile_X1Y11_FrameData_O),
     .FrameStrobe(Tile_X1Y12_FrameStrobe_O),
@@ -9281,7 +9281,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y11_Emulate_Bitstream)
@@ -9295,7 +9295,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y12_N2BEGb),
     .N4END(Tile_X2Y12_N4BEG),
     .NN4END(Tile_X2Y12_NN4BEG),
-    .CI(Tile_X2Y12_CO),
+    .Ci(Tile_X2Y12_Co),
     .E1END(Tile_X1Y11_E1BEG),
     .E2MID(Tile_X1Y11_E2BEG),
     .E2END(Tile_X1Y11_E2BEGb),
@@ -9332,7 +9332,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y11_W2BEGb),
     .WW4BEG(Tile_X2Y11_WW4BEG),
     .W6BEG(Tile_X2Y11_W6BEG),
-    .CO(Tile_X2Y11_CO),
+    .Co(Tile_X2Y11_Co),
     .FrameData(Tile_X1Y11_FrameData_O),
     .FrameData_O(Tile_X2Y11_FrameData_O),
     .FrameStrobe(Tile_X2Y12_FrameStrobe_O),
@@ -9342,7 +9342,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y11_Emulate_Bitstream)
@@ -9401,7 +9401,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y11_Emulate_Bitstream)
@@ -9415,7 +9415,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y12_N2BEGb),
     .N4END(Tile_X4Y12_N4BEG),
     .NN4END(Tile_X4Y12_NN4BEG),
-    .CI(Tile_X4Y12_CO),
+    .Ci(Tile_X4Y12_Co),
     .E1END(Tile_X3Y11_E1BEG),
     .E2MID(Tile_X3Y11_E2BEG),
     .E2END(Tile_X3Y11_E2BEGb),
@@ -9452,7 +9452,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y11_W2BEGb),
     .WW4BEG(Tile_X4Y11_WW4BEG),
     .W6BEG(Tile_X4Y11_W6BEG),
-    .CO(Tile_X4Y11_CO),
+    .Co(Tile_X4Y11_Co),
     .FrameData(Tile_X3Y11_FrameData_O),
     .FrameData_O(Tile_X4Y11_FrameData_O),
     .FrameStrobe(Tile_X4Y12_FrameStrobe_O),
@@ -9462,7 +9462,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y11_Emulate_Bitstream)
@@ -9476,7 +9476,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y12_N2BEGb),
     .N4END(Tile_X5Y12_N4BEG),
     .NN4END(Tile_X5Y12_NN4BEG),
-    .CI(Tile_X5Y12_CO),
+    .Ci(Tile_X5Y12_Co),
     .E1END(Tile_X4Y11_E1BEG),
     .E2MID(Tile_X4Y11_E2BEG),
     .E2END(Tile_X4Y11_E2BEGb),
@@ -9513,7 +9513,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y11_W2BEGb),
     .WW4BEG(Tile_X5Y11_WW4BEG),
     .W6BEG(Tile_X5Y11_W6BEG),
-    .CO(Tile_X5Y11_CO),
+    .Co(Tile_X5Y11_Co),
     .FrameData(Tile_X4Y11_FrameData_O),
     .FrameData_O(Tile_X5Y11_FrameData_O),
     .FrameStrobe(Tile_X5Y12_FrameStrobe_O),
@@ -9523,7 +9523,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y11_Emulate_Bitstream)
@@ -9537,7 +9537,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y12_N2BEGb),
     .N4END(Tile_X6Y12_N4BEG),
     .NN4END(Tile_X6Y12_NN4BEG),
-    .CI(Tile_X6Y12_CO),
+    .Ci(Tile_X6Y12_Co),
     .E1END(Tile_X5Y11_E1BEG),
     .E2MID(Tile_X5Y11_E2BEG),
     .E2END(Tile_X5Y11_E2BEGb),
@@ -9574,7 +9574,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y11_W2BEGb),
     .WW4BEG(Tile_X6Y11_WW4BEG),
     .W6BEG(Tile_X6Y11_W6BEG),
-    .CO(Tile_X6Y11_CO),
+    .Co(Tile_X6Y11_Co),
     .FrameData(Tile_X5Y11_FrameData_O),
     .FrameData_O(Tile_X6Y11_FrameData_O),
     .FrameStrobe(Tile_X6Y12_FrameStrobe_O),
@@ -9584,7 +9584,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y11_Emulate_Bitstream)
@@ -9598,7 +9598,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y12_N2BEGb),
     .N4END(Tile_X7Y12_N4BEG),
     .NN4END(Tile_X7Y12_NN4BEG),
-    .CI(Tile_X7Y12_CO),
+    .Ci(Tile_X7Y12_Co),
     .E1END(Tile_X6Y11_E1BEG),
     .E2MID(Tile_X6Y11_E2BEG),
     .E2END(Tile_X6Y11_E2BEGb),
@@ -9635,7 +9635,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y11_W2BEGb),
     .WW4BEG(Tile_X7Y11_WW4BEG),
     .W6BEG(Tile_X7Y11_W6BEG),
-    .CO(Tile_X7Y11_CO),
+    .Co(Tile_X7Y11_Co),
     .FrameData(Tile_X6Y11_FrameData_O),
     .FrameData_O(Tile_X7Y11_FrameData_O),
     .FrameStrobe(Tile_X7Y12_FrameStrobe_O),
@@ -9645,7 +9645,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y11_Emulate_Bitstream)
@@ -9712,7 +9712,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y12_Emulate_Bitstream)
@@ -9771,7 +9771,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y12_Emulate_Bitstream)
@@ -9785,7 +9785,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y13_N2BEGb),
     .N4END(Tile_X1Y13_N4BEG),
     .NN4END(Tile_X1Y13_NN4BEG),
-    .CI(Tile_X1Y13_CO),
+    .Ci(Tile_X1Y13_Co),
     .E1END(Tile_X0Y12_E1BEG),
     .E2MID(Tile_X0Y12_E2BEG),
     .E2END(Tile_X0Y12_E2BEGb),
@@ -9822,7 +9822,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y12_W2BEGb),
     .WW4BEG(Tile_X1Y12_WW4BEG),
     .W6BEG(Tile_X1Y12_W6BEG),
-    .CO(Tile_X1Y12_CO),
+    .Co(Tile_X1Y12_Co),
     .FrameData(Tile_X0Y12_FrameData_O),
     .FrameData_O(Tile_X1Y12_FrameData_O),
     .FrameStrobe(Tile_X1Y13_FrameStrobe_O),
@@ -9832,7 +9832,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y12_Emulate_Bitstream)
@@ -9846,7 +9846,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y13_N2BEGb),
     .N4END(Tile_X2Y13_N4BEG),
     .NN4END(Tile_X2Y13_NN4BEG),
-    .CI(Tile_X2Y13_CO),
+    .Ci(Tile_X2Y13_Co),
     .E1END(Tile_X1Y12_E1BEG),
     .E2MID(Tile_X1Y12_E2BEG),
     .E2END(Tile_X1Y12_E2BEGb),
@@ -9883,7 +9883,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y12_W2BEGb),
     .WW4BEG(Tile_X2Y12_WW4BEG),
     .W6BEG(Tile_X2Y12_W6BEG),
-    .CO(Tile_X2Y12_CO),
+    .Co(Tile_X2Y12_Co),
     .FrameData(Tile_X1Y12_FrameData_O),
     .FrameData_O(Tile_X2Y12_FrameData_O),
     .FrameStrobe(Tile_X2Y13_FrameStrobe_O),
@@ -9893,7 +9893,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y12_Emulate_Bitstream)
@@ -9952,7 +9952,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y12_Emulate_Bitstream)
@@ -9966,7 +9966,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y13_N2BEGb),
     .N4END(Tile_X4Y13_N4BEG),
     .NN4END(Tile_X4Y13_NN4BEG),
-    .CI(Tile_X4Y13_CO),
+    .Ci(Tile_X4Y13_Co),
     .E1END(Tile_X3Y12_E1BEG),
     .E2MID(Tile_X3Y12_E2BEG),
     .E2END(Tile_X3Y12_E2BEGb),
@@ -10003,7 +10003,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y12_W2BEGb),
     .WW4BEG(Tile_X4Y12_WW4BEG),
     .W6BEG(Tile_X4Y12_W6BEG),
-    .CO(Tile_X4Y12_CO),
+    .Co(Tile_X4Y12_Co),
     .FrameData(Tile_X3Y12_FrameData_O),
     .FrameData_O(Tile_X4Y12_FrameData_O),
     .FrameStrobe(Tile_X4Y13_FrameStrobe_O),
@@ -10013,7 +10013,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y12_Emulate_Bitstream)
@@ -10027,7 +10027,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y13_N2BEGb),
     .N4END(Tile_X5Y13_N4BEG),
     .NN4END(Tile_X5Y13_NN4BEG),
-    .CI(Tile_X5Y13_CO),
+    .Ci(Tile_X5Y13_Co),
     .E1END(Tile_X4Y12_E1BEG),
     .E2MID(Tile_X4Y12_E2BEG),
     .E2END(Tile_X4Y12_E2BEGb),
@@ -10064,7 +10064,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y12_W2BEGb),
     .WW4BEG(Tile_X5Y12_WW4BEG),
     .W6BEG(Tile_X5Y12_W6BEG),
-    .CO(Tile_X5Y12_CO),
+    .Co(Tile_X5Y12_Co),
     .FrameData(Tile_X4Y12_FrameData_O),
     .FrameData_O(Tile_X5Y12_FrameData_O),
     .FrameStrobe(Tile_X5Y13_FrameStrobe_O),
@@ -10074,7 +10074,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y12_Emulate_Bitstream)
@@ -10088,7 +10088,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y13_N2BEGb),
     .N4END(Tile_X6Y13_N4BEG),
     .NN4END(Tile_X6Y13_NN4BEG),
-    .CI(Tile_X6Y13_CO),
+    .Ci(Tile_X6Y13_Co),
     .E1END(Tile_X5Y12_E1BEG),
     .E2MID(Tile_X5Y12_E2BEG),
     .E2END(Tile_X5Y12_E2BEGb),
@@ -10125,7 +10125,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y12_W2BEGb),
     .WW4BEG(Tile_X6Y12_WW4BEG),
     .W6BEG(Tile_X6Y12_W6BEG),
-    .CO(Tile_X6Y12_CO),
+    .Co(Tile_X6Y12_Co),
     .FrameData(Tile_X5Y12_FrameData_O),
     .FrameData_O(Tile_X6Y12_FrameData_O),
     .FrameStrobe(Tile_X6Y13_FrameStrobe_O),
@@ -10135,7 +10135,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y12_Emulate_Bitstream)
@@ -10149,7 +10149,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y13_N2BEGb),
     .N4END(Tile_X7Y13_N4BEG),
     .NN4END(Tile_X7Y13_NN4BEG),
-    .CI(Tile_X7Y13_CO),
+    .Ci(Tile_X7Y13_Co),
     .E1END(Tile_X6Y12_E1BEG),
     .E2MID(Tile_X6Y12_E2BEG),
     .E2END(Tile_X6Y12_E2BEGb),
@@ -10186,7 +10186,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y12_W2BEGb),
     .WW4BEG(Tile_X7Y12_WW4BEG),
     .W6BEG(Tile_X7Y12_W6BEG),
-    .CO(Tile_X7Y12_CO),
+    .Co(Tile_X7Y12_Co),
     .FrameData(Tile_X6Y12_FrameData_O),
     .FrameData_O(Tile_X7Y12_FrameData_O),
     .FrameStrobe(Tile_X7Y13_FrameStrobe_O),
@@ -10196,7 +10196,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y12_Emulate_Bitstream)
@@ -10263,7 +10263,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-W_GF_IO4_DDR
+(* keep *) W_GF_IO4_DDR
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y13_Emulate_Bitstream)
@@ -10322,7 +10322,7 @@ W_GF_IO4_DDR
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y13_Emulate_Bitstream)
@@ -10336,7 +10336,7 @@ LUT4x8_ha
     .N2END(Tile_X1Y14_N2BEGb),
     .N4END(Tile_X1Y14_N4BEG),
     .NN4END(Tile_X1Y14_NN4BEG),
-    .CI(Tile_X1Y14_Co),
+    .Ci(Tile_X1Y14_Co),
     .E1END(Tile_X0Y13_E1BEG),
     .E2MID(Tile_X0Y13_E2BEG),
     .E2END(Tile_X0Y13_E2BEGb),
@@ -10373,7 +10373,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X1Y13_W2BEGb),
     .WW4BEG(Tile_X1Y13_WW4BEG),
     .W6BEG(Tile_X1Y13_W6BEG),
-    .CO(Tile_X1Y13_CO),
+    .Co(Tile_X1Y13_Co),
     .FrameData(Tile_X0Y13_FrameData_O),
     .FrameData_O(Tile_X1Y13_FrameData_O),
     .FrameStrobe(Tile_X1Y14_FrameStrobe_O),
@@ -10383,7 +10383,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y13_Emulate_Bitstream)
@@ -10397,7 +10397,7 @@ LUT4x8_ha
     .N2END(Tile_X2Y14_N2BEGb),
     .N4END(Tile_X2Y14_N4BEG),
     .NN4END(Tile_X2Y14_NN4BEG),
-    .CI(Tile_X2Y14_Co),
+    .Ci(Tile_X2Y14_Co),
     .E1END(Tile_X1Y13_E1BEG),
     .E2MID(Tile_X1Y13_E2BEG),
     .E2END(Tile_X1Y13_E2BEGb),
@@ -10434,7 +10434,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X2Y13_W2BEGb),
     .WW4BEG(Tile_X2Y13_WW4BEG),
     .W6BEG(Tile_X2Y13_W6BEG),
-    .CO(Tile_X2Y13_CO),
+    .Co(Tile_X2Y13_Co),
     .FrameData(Tile_X1Y13_FrameData_O),
     .FrameData_O(Tile_X2Y13_FrameData_O),
     .FrameStrobe(Tile_X2Y14_FrameStrobe_O),
@@ -10444,7 +10444,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-RegFile
+(* keep *) RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y13_Emulate_Bitstream)
@@ -10503,7 +10503,7 @@ RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y13_Emulate_Bitstream)
@@ -10517,7 +10517,7 @@ LUT4x8_ha
     .N2END(Tile_X4Y14_N2BEGb),
     .N4END(Tile_X4Y14_N4BEG),
     .NN4END(Tile_X4Y14_NN4BEG),
-    .CI(Tile_X4Y14_Co),
+    .Ci(Tile_X4Y14_Co),
     .E1END(Tile_X3Y13_E1BEG),
     .E2MID(Tile_X3Y13_E2BEG),
     .E2END(Tile_X3Y13_E2BEGb),
@@ -10554,7 +10554,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X4Y13_W2BEGb),
     .WW4BEG(Tile_X4Y13_WW4BEG),
     .W6BEG(Tile_X4Y13_W6BEG),
-    .CO(Tile_X4Y13_CO),
+    .Co(Tile_X4Y13_Co),
     .FrameData(Tile_X3Y13_FrameData_O),
     .FrameData_O(Tile_X4Y13_FrameData_O),
     .FrameStrobe(Tile_X4Y14_FrameStrobe_O),
@@ -10564,7 +10564,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y13_Emulate_Bitstream)
@@ -10578,7 +10578,7 @@ LUT4x8_ha
     .N2END(Tile_X5Y14_N2BEGb),
     .N4END(Tile_X5Y14_N4BEG),
     .NN4END(Tile_X5Y14_NN4BEG),
-    .CI(Tile_X5Y14_Co),
+    .Ci(Tile_X5Y14_Co),
     .E1END(Tile_X4Y13_E1BEG),
     .E2MID(Tile_X4Y13_E2BEG),
     .E2END(Tile_X4Y13_E2BEGb),
@@ -10615,7 +10615,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X5Y13_W2BEGb),
     .WW4BEG(Tile_X5Y13_WW4BEG),
     .W6BEG(Tile_X5Y13_W6BEG),
-    .CO(Tile_X5Y13_CO),
+    .Co(Tile_X5Y13_Co),
     .FrameData(Tile_X4Y13_FrameData_O),
     .FrameData_O(Tile_X5Y13_FrameData_O),
     .FrameStrobe(Tile_X5Y14_FrameStrobe_O),
@@ -10625,7 +10625,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y13_Emulate_Bitstream)
@@ -10639,7 +10639,7 @@ LUT4x8_ha
     .N2END(Tile_X6Y14_N2BEGb),
     .N4END(Tile_X6Y14_N4BEG),
     .NN4END(Tile_X6Y14_NN4BEG),
-    .CI(Tile_X6Y14_Co),
+    .Ci(Tile_X6Y14_Co),
     .E1END(Tile_X5Y13_E1BEG),
     .E2MID(Tile_X5Y13_E2BEG),
     .E2END(Tile_X5Y13_E2BEGb),
@@ -10676,7 +10676,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X6Y13_W2BEGb),
     .WW4BEG(Tile_X6Y13_WW4BEG),
     .W6BEG(Tile_X6Y13_W6BEG),
-    .CO(Tile_X6Y13_CO),
+    .Co(Tile_X6Y13_Co),
     .FrameData(Tile_X5Y13_FrameData_O),
     .FrameData_O(Tile_X6Y13_FrameData_O),
     .FrameStrobe(Tile_X6Y14_FrameStrobe_O),
@@ -10686,7 +10686,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-LUT4x8_ha
+(* keep *) LUT4x8_ha
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y13_Emulate_Bitstream)
@@ -10700,7 +10700,7 @@ LUT4x8_ha
     .N2END(Tile_X7Y14_N2BEGb),
     .N4END(Tile_X7Y14_N4BEG),
     .NN4END(Tile_X7Y14_NN4BEG),
-    .CI(Tile_X7Y14_Co),
+    .Ci(Tile_X7Y14_Co),
     .E1END(Tile_X6Y13_E1BEG),
     .E2MID(Tile_X6Y13_E2BEG),
     .E2END(Tile_X6Y13_E2BEGb),
@@ -10737,7 +10737,7 @@ LUT4x8_ha
     .W2BEGb(Tile_X7Y13_W2BEGb),
     .WW4BEG(Tile_X7Y13_WW4BEG),
     .W6BEG(Tile_X7Y13_W6BEG),
-    .CO(Tile_X7Y13_CO),
+    .Co(Tile_X7Y13_Co),
     .FrameData(Tile_X6Y13_FrameData_O),
     .FrameData_O(Tile_X7Y13_FrameData_O),
     .FrameStrobe(Tile_X7Y14_FrameStrobe_O),
@@ -10747,7 +10747,7 @@ LUT4x8_ha
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-E_GF_SRAM_single
+(* keep *) E_GF_SRAM_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y13_Emulate_Bitstream)
@@ -10814,7 +10814,7 @@ E_GF_SRAM_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-SW_GF_term
+(* keep *) SW_GF_term
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X0Y14_Emulate_Bitstream)
@@ -10836,7 +10836,7 @@ SW_GF_term
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-S_WARMBOOT
+(* keep *) S_WARMBOOT
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X1Y14_Emulate_Bitstream)
@@ -10874,7 +10874,7 @@ S_WARMBOOT
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-S_term_single
+(* keep *) S_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X2Y14_Emulate_Bitstream)
@@ -10907,7 +10907,7 @@ S_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-S_term_RegFile
+(* keep *) S_term_RegFile
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X3Y14_Emulate_Bitstream)
@@ -10939,7 +10939,7 @@ S_term_RegFile
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-S_term_single
+(* keep *) S_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X4Y14_Emulate_Bitstream)
@@ -10972,7 +10972,7 @@ S_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-S_term_single
+(* keep *) S_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X5Y14_Emulate_Bitstream)
@@ -11005,7 +11005,7 @@ S_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-S_term_single
+(* keep *) S_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y14_Emulate_Bitstream)
@@ -11038,7 +11038,7 @@ S_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-S_term_single
+(* keep *) S_term_single
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X7Y14_Emulate_Bitstream)
@@ -11071,7 +11071,7 @@ S_term_single
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-SE_term
+(* keep *) SE_term
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X8Y14_Emulate_Bitstream)
