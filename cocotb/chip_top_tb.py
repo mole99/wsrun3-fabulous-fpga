@@ -459,12 +459,6 @@ def chip_top_runner():
         # PoR
         proj_path / "../ip/simple_por/verilog/simple_por.v",
         
-        # eFuse
-        proj_path / "../ip/gf180mcu_re_efuse/verilog/nl/efuse_spi_mem_256x8.nl.v",
-        proj_path / "../ip/gf180mcu_re_efuse/verilog/sim/efuse_array_64x8.v",
-        Path(pdk_root) / pdk / "libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
-        Path(pdk_root) / pdk / "libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
-        
         # Custom IP
         proj_path / "../ip/gf180mcu_ws_ip__logo/vh/gf180mcu_ws_ip__logo.v",
         proj_path / "../ip/gf180mcu_ws_ip__marker/vh/gf180mcu_ws_ip__marker.v",
