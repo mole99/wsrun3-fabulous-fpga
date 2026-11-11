@@ -197,15 +197,15 @@ KLAYOUT_ANTENNA_OPTIONS:
   workers: max
 
 
-INSERT_ECO_DIODES:
-- target: fpga[2].pad/A
-- target: _1264_/A
-- target: _1261_/A
-- target: _1257_/A
-- target: _1312_/A
-- target: _1310_/A
-- target: _1255_/A
-- target: _1259_/A
-- target: wire1161/A
-- target: _1176_/A
-- target: _1181_/A
+#INSERT_ECO_DIODES:
+#- target: fpga[2].pad/A
+#- target: _1264_/A
+#- target: _1261_/A
+#- target: _1257_/A
+#- target: _1312_/A
+#- target: _1310_/A
+#- target: _1255_/A
+#- target: _1259_/A
+#- target: wire1161/A
+#- target: _1176_/A
+#- target: _1181_/A
