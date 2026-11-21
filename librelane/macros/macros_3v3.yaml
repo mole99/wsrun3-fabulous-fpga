@@ -186,15 +186,15 @@ MACROS:
   #      location: [2617, 510]
   #      orientation: MX
 
-  classic_fabric_wsrun2:
+  classic_fabric_wsrun3:
     gds:
-      - dir::../ip/fabulous-fabrics/fabrics/classic_fabric_wsrun2/macro/gf180mcuD/gds/classic_fabric_wsrun2.gds
+      - dir::../ip/fabulous-fabrics/fabrics/classic_fabric_wsrun3/macro/gf180mcuD/gds/classic_fabric_wsrun3.gds
     lef:
-      - dir::../ip/fabulous-fabrics/fabrics/classic_fabric_wsrun2/macro/gf180mcuD/lef/classic_fabric_wsrun2.lef
+      - dir::../ip/fabulous-fabrics/fabrics/classic_fabric_wsrun3/macro/gf180mcuD/lef/classic_fabric_wsrun3.lef
     nl:
-      - dir::../ip/fabulous-fabrics/fabrics/classic_fabric_wsrun2/macro/gf180mcuD/nl/classic_fabric_wsrun2.nl.v
+      - dir::../ip/fabulous-fabrics/fabrics/classic_fabric_wsrun3/macro/gf180mcuD/nl/classic_fabric_wsrun3.nl.v
     instances:
-      i_chip_core.fabric_wrapper.classic_fabric_wsrun2:
+      i_chip_core.fabric_wrapper.classic_fabric_wsrun3:
         location: [expr::(0.56*1100), expr::(0.56*1000)]
         orientation: N
 
@@ -206,7 +206,7 @@ RSZ_DONT_TOUCH_LIST:
 # This is an alternative method compared to
 # specifying the power connections in the RTL
 PDN_MACRO_CONNECTIONS:
-- "i_chip_core.fabric_wrapper.classic_fabric_wsrun2 VDD VSS VPWR VGND"
+- "i_chip_core.fabric_wrapper.classic_fabric_wsrun3 VDD VSS VPWR VGND"
 - "i_chip_core.fabric_wrapper.sram_0 VDD VSS VDD VSS"
 - "i_chip_core.fabric_wrapper.sram_1 VDD VSS VDD VSS"
 - "i_chip_core.fabric_wrapper.sram_2 VDD VSS VDD VSS"

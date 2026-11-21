@@ -17,7 +17,7 @@ if tile_library == "classic":
     from .classic.ram_32x4_2r_1w import test_ram_32x4_2r_1w
     from .classic.register_file import test_register_file # why does it need to go last?
     
-    if fabric != "classic_fabric_wsrun2":
+    if fabric != "classic_fabric_wsrun3":
     
         from .classic.macc_8x8_20 import test_macc_8x8_20
     

@@ -94,7 +94,7 @@ jobs:
     strategy:
       matrix:
         pdk: [gf180mcuD]
-        fabric: [classic_fabric_wsrun2]
+        fabric: [classic_fabric_wsrun3]
         scl: [gf180mcu_as_sc_mcu7t3v3]
     name: Fabric (${{ matrix.fabric }}/${{ matrix.pdk }}/${{ matrix.scl }})
     steps:
@@ -160,7 +160,7 @@ jobs:
     strategy:
       matrix:
         pdk: [gf180mcuD]
-        fabric: [classic_fabric_wsrun2]
+        fabric: [classic_fabric_wsrun3]
         scl: [gf180mcu_as_sc_mcu7t3v3]
         slot: [default]
         sram: [default]

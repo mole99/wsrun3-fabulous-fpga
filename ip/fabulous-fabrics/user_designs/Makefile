@@ -1,5 +1,5 @@
 export PDK 		?= gf180mcuD
-export FABRIC 		?= classic_fabric_wsrun2
+export FABRIC 		?= classic_fabric_wsrun3
 export TILE_LIBRARY 	?= classic
 
 $(info $(PDK))
@@ -20,7 +20,7 @@ DESIGNS := $(filter-out ram_32x4_2r_1w,$(DESIGNS))
 DESIGNS := $(filter-out register_file,$(DESIGNS))
 endif
 
-ifeq ($(FABRIC),classic_fabric_wsrun2)
+ifeq ($(FABRIC),classic_fabric_wsrun3)
 DESIGNS := $(filter-out macc_8x8_20,$(DESIGNS))
 DESIGNS := $(filter-out ihp_sram_1024x32_1rw,$(DESIGNS))
 DESIGNS := $(filter-out mem_1024x32_1rw,$(DESIGNS))

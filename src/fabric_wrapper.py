@@ -1,6 +1,6 @@
 from contextlib import redirect_stdout
 
-FABRIC_NAME = "classic_fabric_wsrun2"
+FABRIC_NAME = "classic_fabric_wsrun3"
 
 COLUMNS = 9
 ROWS = 15

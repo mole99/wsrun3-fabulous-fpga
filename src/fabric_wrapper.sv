@@ -150,12 +150,12 @@ module fabric_wrapper #(
     logic        fabric_sram12_cen_o;
     logic        fabric_sram12_clk_o;
 
-    classic_fabric_wsrun2
+    classic_fabric_wsrun3
     //#(
     //    .MaxFramesPerCol(MaxFramesPerCol),
     //    .FrameBitsPerRow(FrameBitsPerRow)
     //)
-    classic_fabric_wsrun2
+    classic_fabric_wsrun3
     (
         .FrameData      (FrameData_i),
         .FrameStrobe    (FrameStrobe_i),

@@ -12,7 +12,7 @@ GRT_ANTENNA_REPAIR_ITERS: 0
 DRT_ANTENNA_REPAIR_ITERS: 0
 
 # Basics
-DESIGN_NAME: classic_fabric_wsrun2
+DESIGN_NAME: classic_fabric_wsrun3
 VERILOG_FILES: []
 
 # No extract-unique, because the power straps
@@ -27,7 +27,7 @@ GND_NETS: [VGND]
 GRT_ALLOW_CONGESTION: true
 
 # FABulous config
-FABULOUS_FABRIC_CONFIG: dir::classic_fabric_wsrun2.csv
+FABULOUS_FABRIC_CONFIG: dir::classic_fabric_wsrun3.csv
 FABULOUS_TILE_LIBRARY:
 - dir::../../../../ip/fabulous-tiles/tiles/classic/
 - dir::../../../../ip/extra-tiles/tiles/classic/

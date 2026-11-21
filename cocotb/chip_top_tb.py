@@ -26,7 +26,7 @@ pad = os.getenv("PAD", "gf180mcu_fd_io")
 sram = os.getenv("SRAM", "gf180mcu_fd_ip_sram")
 slot = os.getenv("SLOT", "1x1")
 tile_library = os.getenv("TILE_LIBRARY", "classic")
-fabric = os.getenv("FABRIC", "classic_fabric_wsrun2")
+fabric = os.getenv("FABRIC", "classic_fabric_wsrun3")
 
 hdl_toplevel = "chip_top"
 tb_toplevel = "chip_top_tb"
