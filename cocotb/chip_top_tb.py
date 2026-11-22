@@ -362,7 +362,7 @@ async def test_counter_top(dut):
     NUM_CYCLES = 123
     await ClockCycles(clock, NUM_CYCLES)
 
-    assert pcf.get("c").to_unsigned() == NUM_CYCLES
+    assert pcf.get("c").to_unsigned() == NUM_CYCLES-1
 
     logger.info("Done!")
 

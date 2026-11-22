@@ -19,9 +19,9 @@ module counter_top (
         .OUT  (RESET_buf)
     );*/
 
-	  reg [7:0] ctr;
+    reg [7:0] ctr;
 
-	  always @(posedge clk1) begin
+    always @(posedge clk1) begin
         if (rst) begin
             ctr <= 0;
         end else begin
@@ -29,5 +29,5 @@ module counter_top (
         end
     end
 
-	  assign c = ctr;
+    assign c = ctr;
 endmodule
