@@ -4,7 +4,7 @@
 `default_nettype none
 
 module all_zeros (
-    `ifdef CLASSIC_FABRIC_WSRUN2
+    `ifdef CLASSIC_FABRIC_WSRUN3
     output wire [47:0] all
     `else
     output wire [27:0] all
