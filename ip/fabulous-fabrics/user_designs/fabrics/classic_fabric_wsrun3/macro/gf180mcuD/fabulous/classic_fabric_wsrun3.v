@@ -4013,13 +4013,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y1_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y1_LUT4x8_ha
+    Tile_X6Y1_MUL
     (
     .N_GBUF_END(Tile_X6Y2_N_GBUF_BEG),
     .N1END(Tile_X6Y2_N1BEG),
@@ -4564,13 +4564,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y2_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y2_LUT4x8_ha
+    Tile_X6Y2_MUL
     (
     .N_GBUF_END(Tile_X6Y3_N_GBUF_BEG),
     .N1END(Tile_X6Y3_N1BEG),
@@ -5115,13 +5115,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y3_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y3_LUT4x8_ha
+    Tile_X6Y3_MUL
     (
     .N_GBUF_END(Tile_X6Y4_N_GBUF_BEG),
     .N1END(Tile_X6Y4_N1BEG),
@@ -5666,13 +5666,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y4_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y4_LUT4x8_ha
+    Tile_X6Y4_MUL
     (
     .N_GBUF_END(Tile_X6Y5_N_GBUF_BEG),
     .N1END(Tile_X6Y5_N1BEG),
@@ -6217,13 +6217,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y5_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y5_LUT4x8_ha
+    Tile_X6Y5_MUL
     (
     .N_GBUF_END(Tile_X6Y6_N_GBUF_BEG),
     .N1END(Tile_X6Y6_N1BEG),
@@ -6768,13 +6768,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y6_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y6_LUT4x8_ha
+    Tile_X6Y6_MUL
     (
     .N_GBUF_END(Tile_X6Y7_N_GBUF_BEG),
     .N1END(Tile_X6Y7_N1BEG),
@@ -7319,13 +7319,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y7_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y7_LUT4x8_ha
+    Tile_X6Y7_MUL
     (
     .N_GBUF_END(Tile_X6Y8_N_GBUF_BEG),
     .N1END(Tile_X6Y8_N1BEG),
@@ -7870,13 +7870,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y8_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y8_LUT4x8_ha
+    Tile_X6Y8_MUL
     (
     .N_GBUF_END(Tile_X6Y9_N_GBUF_BEG),
     .N1END(Tile_X6Y9_N1BEG),
@@ -8421,13 +8421,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y9_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y9_LUT4x8_ha
+    Tile_X6Y9_MUL
     (
     .N_GBUF_END(Tile_X6Y10_N_GBUF_BEG),
     .N1END(Tile_X6Y10_N1BEG),
@@ -8972,13 +8972,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y10_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y10_LUT4x8_ha
+    Tile_X6Y10_MUL
     (
     .N_GBUF_END(Tile_X6Y11_N_GBUF_BEG),
     .N1END(Tile_X6Y11_N1BEG),
@@ -9523,13 +9523,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y11_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y11_LUT4x8_ha
+    Tile_X6Y11_MUL
     (
     .N_GBUF_END(Tile_X6Y12_N_GBUF_BEG),
     .N1END(Tile_X6Y12_N1BEG),
@@ -10074,13 +10074,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y12_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y12_LUT4x8_ha
+    Tile_X6Y12_MUL
     (
     .N_GBUF_END(Tile_X6Y13_N_GBUF_BEG),
     .N1END(Tile_X6Y13_N1BEG),
@@ -10625,13 +10625,13 @@ assign Column_X8_FrameStrobe = FrameStrobe[MaxFramesPerCol*(8+1)-1:MaxFramesPerC
 
  //tile IO port will get directly connected to top-level tile module
  (* keep *)
-(* keep *) LUT4x8_ha
+(* keep *) MUL
 `ifdef EMULATION
     #(
     .Emulate_Bitstream(`Tile_X6Y13_Emulate_Bitstream)
     )
 `endif
-    Tile_X6Y13_LUT4x8_ha
+    Tile_X6Y13_MUL
     (
     .N_GBUF_END(Tile_X6Y14_N_GBUF_BEG),
     .N1END(Tile_X6Y14_N1BEG),
