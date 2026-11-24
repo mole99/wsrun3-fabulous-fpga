@@ -1,5 +1,7 @@
 module \$__RAM_1024x8_1RW_ (...);
 
+    parameter INIT = 0;
+
     // 1 for posedge clocks and 0 for negedge
     parameter PORT_A_CLK_POL = 1;
 
@@ -14,7 +16,39 @@ module \$__RAM_1024x8_1RW_ (...);
     input  [WIDTH-1:0] PORT_A_WR_BE;
     output [WIDTH-1:0] PORT_A_RD_DATA;
 
-    IHP_SRAM_1024x32_1RW #(
+    GF_SRAM_1024x8_1RW #(
+        .INIT_0(INIT[255:0]),
+        .INIT_1(INIT[511:256]),
+        .INIT_2(INIT[767:512]),
+        .INIT_3(INIT[1023:768]),
+        .INIT_4(INIT[1279:1024]),
+        .INIT_5(INIT[1535:1280]),
+        .INIT_6(INIT[1791:1536]),
+        .INIT_7(INIT[2047:1792]),
+        .INIT_8(INIT[2303:2048]),
+        .INIT_9(INIT[2559:2304]),
+        .INIT_10(INIT[2815:2560]),
+        .INIT_11(INIT[3071:2816]),
+        .INIT_12(INIT[3327:3072]),
+        .INIT_13(INIT[3583:3328]),
+        .INIT_14(INIT[3839:3584]),
+        .INIT_15(INIT[4095:3840]),
+        .INIT_16(INIT[4351:4096]),
+        .INIT_17(INIT[4607:4352]),
+        .INIT_18(INIT[4863:4608]),
+        .INIT_19(INIT[5119:4864]),
+        .INIT_20(INIT[5375:5120]),
+        .INIT_21(INIT[5631:5376]),
+        .INIT_22(INIT[5887:5632]),
+        .INIT_23(INIT[6143:5888]),
+        .INIT_24(INIT[6399:6144]),
+        .INIT_25(INIT[6655:6400]),
+        .INIT_26(INIT[6911:6656]),
+        .INIT_27(INIT[7167:6912]),
+        .INIT_28(INIT[7423:7168]),
+        .INIT_29(INIT[7679:7424]),
+        .INIT_30(INIT[7935:7680]),
+        .INIT_31(INIT[8191:7936]),
         .CLK_INV (PORT_A_CLK_POL != 1'b1)
     ) _TECHMAP_REPLACE_ (
         // Port A - Read/Write
