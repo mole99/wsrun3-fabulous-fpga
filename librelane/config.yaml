@@ -37,12 +37,14 @@ VERILOG_FILES:
 - dir::../src/chip_top.sv
 - dir::../src/chip_core.sv
 - dir::../src/fabric_wrapper.sv
-- dir::../ip/fabric_config/fabric_config.sv
+#- dir::../ip/fabric_config/fabric_config.sv
+- dir::../src/fabric_config.sv
+- dir::../src/memory_config.sv
 - dir::../ip/fabric_config/fabric_spi_controller.sv
 - dir::../ip/fabric_config/fabric_spi_receiver.sv
 
 # Enable plugin for better SystemVerilog support
-# USE_SLANG: True
+USE_SLANG: True
 # SLANG_ARGUMENTS: ['--keep-hierarchy']
 
 # Slightly smaller file sizes

@@ -26,12 +26,25 @@ with open('fabric_wrapper.sv', 'w') as f:
     parameter NumColumns = {COLUMNS},
     parameter NumRows = {ROWS},
     
-    parameter FABRIC_NUM_IO_WEST = {FABRIC_NUM_IO_WEST}
+    parameter FABRIC_NUM_IO_WEST = {FABRIC_NUM_IO_WEST},
+    
+    parameter NUM_MEMORIES = 1,
+    
+    parameter MEMORY_DATA_WIDTH = 8,
+    parameter MEMORY_ADDR_WIDTH = 8
 )(
+    
+    input  logic clk_i,
     
     // Configuration
     input  logic [(FrameBitsPerRow*NumRows)-1:0]    FrameData_i,
     input  logic [(MaxFramesPerCol*NumColumns)-1:0] FrameStrobe_i,
+    
+    // Output ports to memories
+    input logic [NUM_MEMORIES-1:0] sram_config_enable_i,
+    input logic sram_config_we_i,
+    input logic [MEMORY_ADDR_WIDTH-1:0] sram_config_address_i,
+    input logic [MEMORY_DATA_WIDTH-1:0] sram_config_data_i,
         """)
 
         print(f'    // Fabric is configured')
@@ -154,13 +167,26 @@ with open('fabric_wrapper.sv', 'w') as f:
         for i in range(NUM_SRAM):
             print(f"""    // SRAM {i} instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_{i} (
+//      .CLK      (fabric_sram{i}_clk_o),
+//      .CEN      (fabric_sram{i}_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram{i}_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram{i}_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram{i}_a_o),
+//      .D        (fabric_sram{i}_d_o),
+//      .Q        (fabric_sram{i}_q_i)
+//    );
+        """)
+        
+            print(f"""    // SRAM {i} instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_{i} (
-      .CLK      (fabric_sram{i}_clk_o),
-      .CEN      (fabric_sram{i}_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram{i}_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram{i}_wen_o),   //Write Enable, negative
-      .A        (fabric_sram{i}_a_o),
-      .D        (fabric_sram{i}_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram{i}_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[{i}] : fabric_sram{i}_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram{i}_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram{i}_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram{i}_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram{i}_d_o),
       .Q        (fabric_sram{i}_q_i)
     );
         """)
@@ -177,7 +203,5 @@ with open('fabric_wrapper.sv', 'w') as f:
       .spi_mosi   (fabric_efuse{i}_spi_mosi_o)
     );
         """)
-
-
 
         print("endmodule")

@@ -43,6 +43,17 @@
                 cocotbext-spi = callPythonPackage ./nix/cocotbext-spi.nix { };
               }
             ))
+            (final: prev: {
+              iverilog = prev.iverilog.overrideAttrs {
+                src = prev.fetchFromGitHub {
+                  owner = "steveicarus";
+                  repo = "iverilog";
+                  rev = "9b131db4af34619efe977c4617a7b15c4cc5deb6";
+                  hash = "sha256-qLgUFbe+B7Vfpj96OrPvWCgAlKcRefssPLu+OEgEbYo=";
+                };
+                installCheckPhase = '''';
+              };
+            })
           ];
         }
       );

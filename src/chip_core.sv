@@ -297,8 +297,8 @@ module chip_core #(
 
     // TODO adjust BITSTREAM_LENGTH_WORDS
     fabric_spi_controller #(
-        .BITSTREAM_LENGTH_WORDS (32'hB46),
-        .SLOT_OFFSET_WORDS      (32'h1000),
+        .BITSTREAM_LENGTH_WORDS (32'h3F53),
+        .SLOT_OFFSET_WORDS      (32'h4000),
         .NUM_SLOTS              (16)
     ) fabric_spi_controller (
         .clk_i  (clk),
@@ -322,12 +322,19 @@ module chip_core #(
         .miso_i     (spi_controller_miso_i)
     );
     
+    wire [4:0] memory_coord_x;
+    wire [4:0] memory_coord_y;
+    wire       memory_coord_valid;
+    
+    wire [30:0] memory_data;
+    wire        memory_data_valid;
+    
     fabric_config #(
-        .FrameBitsPerRow    (FrameBitsPerRow),
-        .MaxFramesPerCol    (MaxFramesPerCol),
+        .FRAME_BITS_PER_ROW     (FrameBitsPerRow),
+        .MAX_FRAMES_PER_COL     (MaxFramesPerCol),
         
-        .NumColumns         (NumColumns),
-        .NumRows            (NumRows)
+        .FABRIC_NUM_COLUMNS     (NumColumns),
+        .FABRIC_NUM_ROWS        (NumRows)
     ) fabric_config (
         .clk_i              (clk),
         .rst_ni             (rst_n_sync),
@@ -343,14 +350,72 @@ module chip_core #(
         .configured_o       (fabric_config_configured),
         
         // To the fabric
-        .FrameData_o        (FrameData),
-        .FrameStrobe_o      (FrameStrobe)
+        .frame_data_o        (FrameData),
+        .frame_strobe_o      (FrameStrobe),
+        
+        // To the memories
+        .memory_coord_x_o     (memory_coord_x),
+        .memory_coord_y_o     (memory_coord_y),
+        .memory_coord_valid_o (memory_coord_valid),
+        
+        .memory_data_o        (memory_data),
+        .memory_data_valid_o  (memory_data_valid)
     );
 
-    (* keep *) fabric_wrapper fabric_wrapper (
+    localparam NUM_MEMORIES = 13;
+    localparam MEMORY_DATA_WIDTH = 8;
+    localparam MEMORY_ADDR_WIDTH = 10;
+
+    wire [NUM_MEMORIES-1:0] sram_config_enable;
+    wire sram_config_we;
+    wire [MEMORY_ADDR_WIDTH-1:0] sram_config_address;
+    wire [MEMORY_DATA_WIDTH-1:0] sram_config_data;
+
+    memory_config #(
+        .NUM_MEMORIES (NUM_MEMORIES),
+        
+        .MEMORY_DATA_WIDTH (MEMORY_DATA_WIDTH),
+        .MEMORY_ADDR_WIDTH (MEMORY_ADDR_WIDTH),
+        
+        .X_COORDS ('{8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8}),
+        .Y_COORDS ('{13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1})
+    ) memory_config (
+        .clk_i              (clk),
+        .rst_ni             (rst_n_sync),
+
+        // Coordinates
+        .memory_coord_x_i       (memory_coord_x),
+        .memory_coord_y_i       (memory_coord_y),
+        .memory_coord_valid_i   (memory_coord_valid),
+        
+        // Data
+        .memory_data_i          (memory_data),
+        .memory_data_valid_i    (memory_data_valid),
+        
+        // Output ports to memories
+        .sram_config_enable_o   (sram_config_enable),
+        .sram_config_we_o       (sram_config_we),
+        .sram_config_address_o  (sram_config_address),
+        .sram_config_data_o     (sram_config_data)
+    );
+
+    fabric_wrapper #(
+        .NUM_MEMORIES (NUM_MEMORIES),
+
+        .MEMORY_DATA_WIDTH (MEMORY_DATA_WIDTH),
+        .MEMORY_ADDR_WIDTH (MEMORY_ADDR_WIDTH)
+    ) fabric_wrapper (
+    
+        .clk_i (clk),
+        
         // Configuration
         .FrameData_i    (FrameData),
         .FrameStrobe_i  (FrameStrobe),
+        
+        .sram_config_enable_i   (sram_config_enable),
+        .sram_config_we_i       (sram_config_we),
+        .sram_config_address_i  (sram_config_address),
+        .sram_config_data_i     (sram_config_data),
         
         // Fabric is configured
         .configured_i   (fabric_config_configured),

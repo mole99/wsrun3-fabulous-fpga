@@ -5,12 +5,25 @@ module fabric_wrapper #(
     parameter NumColumns = 9,
     parameter NumRows = 15,
     
-    parameter FABRIC_NUM_IO_WEST = 48
+    parameter FABRIC_NUM_IO_WEST = 48,
+    
+    parameter NUM_MEMORIES = 1,
+    
+    parameter MEMORY_DATA_WIDTH = 8,
+    parameter MEMORY_ADDR_WIDTH = 8
 )(
+    
+    input  logic clk_i,
     
     // Configuration
     input  logic [(FrameBitsPerRow*NumRows)-1:0]    FrameData_i,
     input  logic [(MaxFramesPerCol*NumColumns)-1:0] FrameStrobe_i,
+    
+    // Output ports to memories
+    input logic [NUM_MEMORIES-1:0] sram_config_enable_i,
+    input logic sram_config_we_i,
+    input logic [MEMORY_ADDR_WIDTH-1:0] sram_config_address_i,
+    input logic [MEMORY_DATA_WIDTH-1:0] sram_config_data_i,
         
     // Fabric is configured
     input                                configured_i,
@@ -1080,157 +1093,313 @@ module fabric_wrapper #(
 
     // SRAM 0 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_0 (
+//      .CLK      (fabric_sram0_clk_o),
+//      .CEN      (fabric_sram0_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram0_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram0_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram0_a_o),
+//      .D        (fabric_sram0_d_o),
+//      .Q        (fabric_sram0_q_i)
+//    );
+        
+    // SRAM 0 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_0 (
-      .CLK      (fabric_sram0_clk_o),
-      .CEN      (fabric_sram0_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram0_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram0_wen_o),   //Write Enable, negative
-      .A        (fabric_sram0_a_o),
-      .D        (fabric_sram0_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram0_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[0] : fabric_sram0_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram0_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram0_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram0_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram0_d_o),
       .Q        (fabric_sram0_q_i)
     );
         
     // SRAM 1 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_1 (
+//      .CLK      (fabric_sram1_clk_o),
+//      .CEN      (fabric_sram1_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram1_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram1_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram1_a_o),
+//      .D        (fabric_sram1_d_o),
+//      .Q        (fabric_sram1_q_i)
+//    );
+        
+    // SRAM 1 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_1 (
-      .CLK      (fabric_sram1_clk_o),
-      .CEN      (fabric_sram1_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram1_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram1_wen_o),   //Write Enable, negative
-      .A        (fabric_sram1_a_o),
-      .D        (fabric_sram1_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram1_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[1] : fabric_sram1_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram1_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram1_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram1_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram1_d_o),
       .Q        (fabric_sram1_q_i)
     );
         
     // SRAM 2 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_2 (
+//      .CLK      (fabric_sram2_clk_o),
+//      .CEN      (fabric_sram2_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram2_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram2_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram2_a_o),
+//      .D        (fabric_sram2_d_o),
+//      .Q        (fabric_sram2_q_i)
+//    );
+        
+    // SRAM 2 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_2 (
-      .CLK      (fabric_sram2_clk_o),
-      .CEN      (fabric_sram2_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram2_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram2_wen_o),   //Write Enable, negative
-      .A        (fabric_sram2_a_o),
-      .D        (fabric_sram2_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram2_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[2] : fabric_sram2_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram2_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram2_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram2_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram2_d_o),
       .Q        (fabric_sram2_q_i)
     );
         
     // SRAM 3 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_3 (
+//      .CLK      (fabric_sram3_clk_o),
+//      .CEN      (fabric_sram3_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram3_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram3_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram3_a_o),
+//      .D        (fabric_sram3_d_o),
+//      .Q        (fabric_sram3_q_i)
+//    );
+        
+    // SRAM 3 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_3 (
-      .CLK      (fabric_sram3_clk_o),
-      .CEN      (fabric_sram3_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram3_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram3_wen_o),   //Write Enable, negative
-      .A        (fabric_sram3_a_o),
-      .D        (fabric_sram3_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram3_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[3] : fabric_sram3_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram3_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram3_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram3_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram3_d_o),
       .Q        (fabric_sram3_q_i)
     );
         
     // SRAM 4 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_4 (
+//      .CLK      (fabric_sram4_clk_o),
+//      .CEN      (fabric_sram4_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram4_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram4_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram4_a_o),
+//      .D        (fabric_sram4_d_o),
+//      .Q        (fabric_sram4_q_i)
+//    );
+        
+    // SRAM 4 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_4 (
-      .CLK      (fabric_sram4_clk_o),
-      .CEN      (fabric_sram4_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram4_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram4_wen_o),   //Write Enable, negative
-      .A        (fabric_sram4_a_o),
-      .D        (fabric_sram4_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram4_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[4] : fabric_sram4_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram4_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram4_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram4_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram4_d_o),
       .Q        (fabric_sram4_q_i)
     );
         
     // SRAM 5 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_5 (
+//      .CLK      (fabric_sram5_clk_o),
+//      .CEN      (fabric_sram5_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram5_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram5_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram5_a_o),
+//      .D        (fabric_sram5_d_o),
+//      .Q        (fabric_sram5_q_i)
+//    );
+        
+    // SRAM 5 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_5 (
-      .CLK      (fabric_sram5_clk_o),
-      .CEN      (fabric_sram5_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram5_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram5_wen_o),   //Write Enable, negative
-      .A        (fabric_sram5_a_o),
-      .D        (fabric_sram5_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram5_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[5] : fabric_sram5_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram5_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram5_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram5_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram5_d_o),
       .Q        (fabric_sram5_q_i)
     );
         
     // SRAM 6 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_6 (
+//      .CLK      (fabric_sram6_clk_o),
+//      .CEN      (fabric_sram6_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram6_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram6_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram6_a_o),
+//      .D        (fabric_sram6_d_o),
+//      .Q        (fabric_sram6_q_i)
+//    );
+        
+    // SRAM 6 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_6 (
-      .CLK      (fabric_sram6_clk_o),
-      .CEN      (fabric_sram6_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram6_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram6_wen_o),   //Write Enable, negative
-      .A        (fabric_sram6_a_o),
-      .D        (fabric_sram6_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram6_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[6] : fabric_sram6_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram6_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram6_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram6_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram6_d_o),
       .Q        (fabric_sram6_q_i)
     );
         
     // SRAM 7 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_7 (
+//      .CLK      (fabric_sram7_clk_o),
+//      .CEN      (fabric_sram7_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram7_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram7_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram7_a_o),
+//      .D        (fabric_sram7_d_o),
+//      .Q        (fabric_sram7_q_i)
+//    );
+        
+    // SRAM 7 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_7 (
-      .CLK      (fabric_sram7_clk_o),
-      .CEN      (fabric_sram7_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram7_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram7_wen_o),   //Write Enable, negative
-      .A        (fabric_sram7_a_o),
-      .D        (fabric_sram7_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram7_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[7] : fabric_sram7_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram7_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram7_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram7_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram7_d_o),
       .Q        (fabric_sram7_q_i)
     );
         
     // SRAM 8 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_8 (
+//      .CLK      (fabric_sram8_clk_o),
+//      .CEN      (fabric_sram8_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram8_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram8_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram8_a_o),
+//      .D        (fabric_sram8_d_o),
+//      .Q        (fabric_sram8_q_i)
+//    );
+        
+    // SRAM 8 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_8 (
-      .CLK      (fabric_sram8_clk_o),
-      .CEN      (fabric_sram8_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram8_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram8_wen_o),   //Write Enable, negative
-      .A        (fabric_sram8_a_o),
-      .D        (fabric_sram8_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram8_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[8] : fabric_sram8_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram8_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram8_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram8_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram8_d_o),
       .Q        (fabric_sram8_q_i)
     );
         
     // SRAM 9 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_9 (
+//      .CLK      (fabric_sram9_clk_o),
+//      .CEN      (fabric_sram9_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram9_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram9_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram9_a_o),
+//      .D        (fabric_sram9_d_o),
+//      .Q        (fabric_sram9_q_i)
+//    );
+        
+    // SRAM 9 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_9 (
-      .CLK      (fabric_sram9_clk_o),
-      .CEN      (fabric_sram9_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram9_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram9_wen_o),   //Write Enable, negative
-      .A        (fabric_sram9_a_o),
-      .D        (fabric_sram9_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram9_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[9] : fabric_sram9_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram9_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram9_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram9_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram9_d_o),
       .Q        (fabric_sram9_q_i)
     );
         
     // SRAM 10 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_10 (
+//      .CLK      (fabric_sram10_clk_o),
+//      .CEN      (fabric_sram10_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram10_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram10_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram10_a_o),
+//      .D        (fabric_sram10_d_o),
+//      .Q        (fabric_sram10_q_i)
+//    );
+        
+    // SRAM 10 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_10 (
-      .CLK      (fabric_sram10_clk_o),
-      .CEN      (fabric_sram10_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram10_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram10_wen_o),   //Write Enable, negative
-      .A        (fabric_sram10_a_o),
-      .D        (fabric_sram10_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram10_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[10] : fabric_sram10_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram10_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram10_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram10_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram10_d_o),
       .Q        (fabric_sram10_q_i)
     );
         
     // SRAM 11 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_11 (
+//      .CLK      (fabric_sram11_clk_o),
+//      .CEN      (fabric_sram11_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram11_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram11_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram11_a_o),
+//      .D        (fabric_sram11_d_o),
+//      .Q        (fabric_sram11_q_i)
+//    );
+        
+    // SRAM 11 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_11 (
-      .CLK      (fabric_sram11_clk_o),
-      .CEN      (fabric_sram11_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram11_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram11_wen_o),   //Write Enable, negative
-      .A        (fabric_sram11_a_o),
-      .D        (fabric_sram11_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram11_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[11] : fabric_sram11_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram11_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram11_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram11_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram11_d_o),
       .Q        (fabric_sram11_q_i)
     );
         
     // SRAM 12 instance
 
+//    gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_12 (
+//      .CLK      (fabric_sram12_clk_o),
+//      .CEN      (fabric_sram12_cen_o),   //Chip Enable, negative
+//      .GWEN     (fabric_sram12_gwen_o),  //Global Write Enable, negative
+//      .WEN      (fabric_sram12_wen_o),   //Write Enable, negative
+//      .A        (fabric_sram12_a_o),
+//      .D        (fabric_sram12_d_o),
+//      .Q        (fabric_sram12_q_i)
+//    );
+        
+    // SRAM 12 instance
+
     gf180mcu_ocd_ip_sram__sram1024x8m8wm1 sram_12 (
-      .CLK      (fabric_sram12_clk_o),
-      .CEN      (fabric_sram12_cen_o),   //Chip Enable, negative
-      .GWEN     (fabric_sram12_gwen_o),  //Global Write Enable, negative
-      .WEN      (fabric_sram12_wen_o),   //Write Enable, negative
-      .A        (fabric_sram12_a_o),
-      .D        (fabric_sram12_d_o),
+      .CLK      (sys_reset_i ? clk_i : fabric_sram12_clk_o),
+      .CEN      (sys_reset_i ? !sram_config_enable_i[12] : fabric_sram12_cen_o),   //Chip Enable, negative
+      .GWEN     (sys_reset_i ? !sram_config_we_i : fabric_sram12_gwen_o),  //Global Write Enable, negative
+      .WEN      (sys_reset_i ? 8'b0 : fabric_sram12_wen_o),   //Write Enable, negative
+      .A        (sys_reset_i ? sram_config_address_i : fabric_sram12_a_o),
+      .D        (sys_reset_i ? sram_config_data_i : fabric_sram12_d_o),
       .Q        (fabric_sram12_q_i)
     );
         

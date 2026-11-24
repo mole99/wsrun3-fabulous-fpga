@@ -254,6 +254,12 @@ jobs:
           # cocotb also returns 0 upon failure
           # check the simulation results
           ! grep failure cocotb/sim_build/results.xml
+      - name: Run RTL simulation (memory_init)
+        run: |
+          TESTCASE=memory_init nix develop --command make sim
+          # cocotb also returns 0 upon failure
+          # check the simulation results
+          ! grep failure cocotb/sim_build/results.xml
       - name: Implement the Chip
         if: success() || failure()
         run: |

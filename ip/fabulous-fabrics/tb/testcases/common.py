@@ -14,6 +14,8 @@ FRAME_SELECT_WIDTH = 5 # hardcoded, should be based on FABRIC_NUM_COLUMNS
 
 BITSTREAM_START = 0xFAB0FAB1
 DESYNC_FLAG = 20
+MEMORY_FLAG = 21
+MEMORY_DONE_FLAG = 31
 
 fabric = os.getenv("FABRIC", "classic_fabric_wsrun3")
 tile_library = os.getenv("TILE_LIBRARY", "classic")
@@ -67,6 +69,7 @@ async def upload_bitstream(dut, bitstream_path, delay=10):
             
             column_select = (header >> 27) & 0x1F # bits 31:27
             sync_bit = (header >> DESYNC_FLAG) & 0x1 # bit 20
+            memory_bit = (header >> MEMORY_FLAG) & 0x1 # bit 21
             frame_strobe = header & 0xFFFFF # bits 19:0
             
             #print(f"column_select: {column_select}")
@@ -77,7 +80,18 @@ async def upload_bitstream(dut, bitstream_path, delay=10):
             if sync_bit:
                 print("Detected desync flag!")
                 break
-            
+
+            # Memory
+            if memory_bit:
+                print("Detected memory flag!")
+                data = f.read(4)
+                data = int.from_bytes(data, "big")
+                # Wait for done flag
+                while not (data >> MEMORY_DONE_FLAG) & 0x1:
+                    data = f.read(4)
+                    data = int.from_bytes(data, "big")
+                continue # read next header
+
             # Read row data
             all_row_data = 0
             for i in range(num_rows):

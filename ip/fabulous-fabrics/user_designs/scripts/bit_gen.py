@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+# SPDX-FileCopyrightText: © 2026 Leo Moser
+# SPDX-FileCopyrightText: © 2020 FABulous Contributors
+# SPDX-License-Identifier: Apache-2.0
 
 import pickle
 import re
@@ -20,10 +23,35 @@ def replace(string, substitutions):
 def bitstring_to_bytes(s):
     return int(s, 2).to_bytes((len(s) + 7) // 8, byteorder="big")
 
+# Memories
+memories = {
+    "X8Y1": bytearray(1024),
+    "X8Y2": bytearray(1024),
+    "X8Y3": bytearray(1024),
+    "X8Y4": bytearray(1024),
+    "X8Y5": bytearray(1024),
+    "X8Y6": bytearray(1024),
+    "X8Y7": bytearray(1024),
+    "X8Y8": bytearray(1024),
+    "X8Y9": bytearray(1024),
+    "X8Y10": bytearray(1024),
+    "X8Y11": bytearray(1024),
+    "X8Y12": bytearray(1024),
+    "X8Y13": bytearray(1024),
+}
 
 # CAD methods from summer vacation project 2020
 # Method to generate bitstream in the output format - more detail at the end
 def genBitstream(fasmFile: str, specFile: str, bitstreamFile: str):
+
+    # HACK: preprocess fasm file
+    # the parser doe not like 'x', replace with '0'
+    with open(fasmFile) as file:
+        fasm_contents = [line for line in file]
+    with open(fasmFile, "w") as file:
+        for line in fasm_contents:
+            file.write(re.sub(r"'b[x01]+", lambda m: m.group(0).replace('x', '0'), line))
+
     lGen = parse_fasm_filename(fasmFile)
     canonStr = fasm_tuple_to_string(lGen, True)
     canonList = list(parse_fasm_string(canonStr))
@@ -74,12 +102,34 @@ def genBitstream(fasmFile: str, specFile: str, bitstreamFile: str):
                         )
 
             else:
-                # print(specDict["TileSpecs"][tileLoc].keys())
-                print(f"{tileType} {tileLoc} {featureName}")
-                print(
-                    "Feature found in fasm file was not found in the bitstream spec"
-                )
-                raise Exception
+                if tileType == "E_GF_SRAM_single":
+                    assert(tileLoc in memories)
+
+                    try:
+                        search = re.search(r"([A-Z])\.INIT_(\d+)\[(\d+)\]", featureName)
+                        
+                        bel = search.group(1)
+                        init_num = int(search.group(2))
+                        index = int(search.group(3))
+                    except:
+                        search = re.search(r"([A-Z])\.INIT_(\d+)", featureName)
+                        
+                        bel = search.group(1)
+                        init_num = int(search.group(2))
+                        index = 0
+                                        
+                    byte_offset = init_num*32 + index//8
+                    bit_offset = index%8
+                    
+                    # Set the bit in the memory
+                    memories[tileLoc][byte_offset] |= (1<<bit_offset)
+                else:
+                    # print(specDict["TileSpecs"][tileLoc].keys())
+                    print(f"{tileType} {tileLoc} {featureName}")
+                    print(
+                        "Feature found in fasm file was not found in the bitstream spec"
+                    )
+                    raise Exception
 
     # Write output string and introduce mask
     coordsRE = re.compile(r"X(\d*)Y(\d*)")
@@ -171,6 +221,25 @@ def genBitstream(fasmFile: str, specFile: str, bitstreamFile: str):
 
             bitStr += bitstring_to_bytes(frame_select_temp)
             bitStr += bit_array[i][j]
+
+    MEMORY_FLAG = 21
+    MEMORY_DONE_FLAG = 31
+
+    # Add contents of memories
+    for loc, memory in memories.items():
+    
+        # Memory flag + Coords
+        X, Y = loc.split("X")[1].split("Y")
+        X = int(X)
+        Y = int(Y)
+        
+        bitStr += ((1<<MEMORY_FLAG | (Y<<5) | (X)).to_bytes(4, 'big'))
+        
+        for i, byte in enumerate(memory):
+            if i == len(memory)-1:
+                bitStr += (byte | (1<<MEMORY_DONE_FLAG)).to_bytes(4, 'big')
+            else:
+                bitStr += (byte & ~(1<<MEMORY_DONE_FLAG)).to_bytes(4, 'big')
 
     # Add desync frame
     # 20th bit is desync flag

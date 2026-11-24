@@ -119,6 +119,11 @@ testcases = {
         'flash1_slot0': f"../../ip/fabulous-fabrics/user_designs/designs/{tile_library}/trigger_slot1/trigger_slot1.hex",
         'flash1_slot1': f"../../ip/fabulous-fabrics/user_designs/designs/{tile_library}/trigger_slot0/trigger_slot0.hex",
     },
+    
+    "memory_init": {
+        'flash1_slot0': f"../../ip/fabulous-fabrics/user_designs/designs/{tile_library}/memory_init/memory_init.hex",
+        'flash1_slot1': "",
+    },
 }
 
 enabled = testcases[testcase]
@@ -413,6 +418,61 @@ async def test_trigger_slot(dut):
     logger.info("Done!")
 
 
+@cocotb.test(skip=testcase!="memory_init")
+async def test_memory_init(dut):
+    """Load bitstream that initializes the memory"""
+
+    testname = "memory_init"
+
+    pcf = PCF(dut, proj_path / f"../ip/fabulous-fabrics/fabrics/{fabric}/constraints.pcf", lookup)
+    pcf.write_gtkw(f"{testname}.gtkw", ["clk1", "addr", "data_o"])
+
+    # Create a logger for this testbench
+    logger = logging.getLogger("my_testbench")
+
+    logger.info("Setting defaults...")
+
+    # FPGA config mode
+    # if mode == 0: SPI controller
+    # if mode == 1: SPI receiver
+    dut.fpga_mode_PAD.value = 0
+
+    logger.info("Startup sequence...")
+
+    # Start up
+    await start_up(dut)
+
+    logger.info("Running the test...")
+    
+    # Wait for done
+    await FallingEdge(dut.config_busy_PAD)
+    await ClockCycles(dut.clk_PAD, 10)
+
+    clock1 = pcf.get_raw("clk1", "OUT")
+    cocotb.start_soon(Clock(clock1, 100, "ns").start())
+
+    await ClockCycles(clock1, 10)
+
+    golden_text = """Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem"""
+    
+    text = ""
+    for i in range(1024):
+        pcf.set("addr", LogicArray.from_unsigned(i, len(pcf.get("addr"))))
+        
+        await ClockCycles(clock1, 2)
+        print(pcf.get("data_o").to_unsigned())
+        text += chr(pcf.get("data_o").to_unsigned())
+
+    print(text)
+    
+    assert text in golden_text
+
 def chip_top_runner():
     sources = []
     defines = {f"SLOT_{slot.upper()}": True, "BITSTREAM_FLASH": True, "SIM": True}
@@ -443,7 +503,9 @@ def chip_top_runner():
 
         sources.append(proj_path / "../src/fabric_wrapper.sv")
         
-        sources.append(proj_path / "../ip/fabric_config/fabric_config.sv")
+        #sources.append(proj_path / "../ip/fabric_config/fabric_config.sv")
+        sources.append(proj_path / "../src/fabric_config.sv")
+        sources.append(proj_path / "../src/memory_config.sv")
         sources.append(proj_path / "../ip/fabric_config/fabric_spi_controller.sv")
         sources.append(proj_path / "../ip/fabric_config/fabric_spi_receiver.sv")
 

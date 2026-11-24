@@ -142,3 +142,27 @@ set_io product[8] X0Y8/A
 set_io product[9] X0Y8/B
 set_io product[10] X0Y8/C
 set_io product[11] X0Y8/D
+
+# For the memory init test
+
+set_io addr[0] X0Y3/A
+set_io addr[1] X0Y3/B
+set_io addr[2] X0Y3/C
+set_io addr[3] X0Y3/D
+set_io addr[4] X0Y4/A
+
+set_io addr[5] X0Y4/B
+set_io addr[6] X0Y4/C
+set_io addr[7] X0Y4/D
+set_io addr[8] X0Y5/A
+set_io addr[9] X0Y5/B
+
+set_io data_o[0] X0Y6/A
+set_io data_o[1] X0Y6/B
+set_io data_o[2] X0Y6/C
+set_io data_o[3] X0Y6/D
+
+set_io data_o[4] X0Y7/A
+set_io data_o[5] X0Y7/B
+set_io data_o[6] X0Y7/C
+set_io data_o[7] X0Y7/D
