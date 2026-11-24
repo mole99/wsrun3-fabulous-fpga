@@ -161,8 +161,8 @@ MAGIC_GDS_FLATGLOB:
 # ignore active metal on previous and subsequent layers
 # (DM.5_DM.7 and DM.4_DM.6). Dummy metal is moved to active
 # metal during the precheck.
-KLAYOUT_FILLER_OPTIONS:
-  Metal2_ignore_active: true
+KLAYOUT_FILLER_DEFINES:
+  Metal2_ignore_active: "true"
 
 # Because we have multiple power pads for one power domain
 MAGIC_EXT_UNIQUE: notopports
@@ -181,31 +181,69 @@ KLAYOUT_PROPERTIES: dir::gf180mcu_render.lyp
 KLAYOUT_DRC_THREADS: 1
 
 # "max" equals max hardware threads
-KLAYOUT_DRC_OPTIONS:
+KLAYOUT_DRC_DEFINES:
   decks: "all,-antenna,-density,-cup" # disable CUP for now
   variant: ref::$PDK
   workers: max
 
-KLAYOUT_DENSITY_OPTIONS:
+KLAYOUT_DENSITY_DEFINES:
   decks: "density"
   variant: ref::$PDK
   workers: max
 
-KLAYOUT_ANTENNA_OPTIONS:
+KLAYOUT_ANTENNA_DEFINES:
   decks: "antenna"
   variant: ref::$PDK
   workers: max
 
+INSERT_ECO_DIODES:
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y2_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y2_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y2_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y2_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y3_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y3_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y3_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y3_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y4_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y4_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y4_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y4_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y5_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y5_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y5_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y5_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y6_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y6_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y6_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y6_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y7_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y7_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y7_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y7_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y8_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y8_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y8_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y8_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y9_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y9_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y9_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y9_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y10_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y10_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y10_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y10_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y11_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y11_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y11_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y11_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y12_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y12_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y12_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y12_D_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y13_A_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y13_B_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y13_C_OUT_top
+- target: i_chip_core.fabric_wrapper.classic_fabric_wsrun3/Tile_X0Y13_D_OUT_top
 
-#INSERT_ECO_DIODES:
-#- target: fpga[2].pad/A
-#- target: _1264_/A
-#- target: _1261_/A
-#- target: _1257_/A
-#- target: _1312_/A
-#- target: _1310_/A
-#- target: _1255_/A
-#- target: _1259_/A
-#- target: wire1161/A
-#- target: _1176_/A
-#- target: _1181_/A
+#DESIGN_REPAIR_MAX_WIRE_LENGTH: 1000
