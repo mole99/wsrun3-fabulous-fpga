@@ -30,7 +30,8 @@ module chip_top_tb;
     wire rst_n_PAD;
     
     wire fpga_mode_PAD;
-    wire config_busy_PAD;
+    //wire config_busy_PAD;
+    wire disable_por_PAD;
     
     wire fpga_sclk_PAD;
     wire fpga_cs_n_PAD;
@@ -124,8 +125,9 @@ module chip_top_tb;
         .rst_n_PAD,
             
         .fpga_mode_PAD,
-        .config_busy_PAD,
-            
+        //.config_busy_PAD,
+        .disable_por_PAD,
+  
         .fpga_sclk_PAD,
         .fpga_cs_n_PAD,
         .fpga_mosi_PAD,

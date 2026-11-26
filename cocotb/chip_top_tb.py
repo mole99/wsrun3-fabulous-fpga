@@ -219,6 +219,7 @@ class PCF:
 
 async def set_defaults(dut):
     dut.fpga_mode_PAD.value = 0
+    dut.disable_por.value = 0
 
 async def enable_power(dut):
     dut.VDD.value = 1
@@ -270,6 +271,7 @@ async def test_all_ones(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
+    dut.disable_por.value = 0
 
     logger.info("Startup sequence...")
 
@@ -282,7 +284,7 @@ async def test_all_ones(dut):
     await ClockCycles(dut.clk_PAD, 10000)
     
     # Wait for done
-    await FallingEdge(dut.config_busy_PAD)
+    await FallingEdge(dut.chip_top.i_chip_core.fabric_config_busy)
     await ClockCycles(dut.clk_PAD, 1)
 
     assert pcf.get("all").to_unsigned() == LogicArray.from_signed(-1, len(pcf.get("all")))
@@ -307,6 +309,7 @@ async def test_all_zeros(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
+    dut.disable_por.value = 0
 
     logger.info("Startup sequence...")
 
@@ -319,7 +322,7 @@ async def test_all_zeros(dut):
     await ClockCycles(dut.clk_PAD, 10000)
     
     # Wait for done
-    await FallingEdge(dut.config_busy_PAD)
+    await FallingEdge(dut.chip_top.i_chip_core.fabric_config_busy)
     await ClockCycles(dut.clk_PAD, 1)
 
     assert pcf.get("all").to_unsigned() == LogicArray.from_unsigned(0, len(pcf.get("all")))
@@ -344,6 +347,7 @@ async def test_counter_top(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
+    dut.disable_por.value = 0
 
     logger.info("Startup sequence...")
 
@@ -353,7 +357,7 @@ async def test_counter_top(dut):
     logger.info("Running the test...")
     
     # Wait for done
-    await FallingEdge(dut.config_busy_PAD)
+    await FallingEdge(dut.chip_top.i_chip_core.fabric_config_busy)
     
     # Start a clock on clk1
     clock = pcf.get_raw("clk1", "OUT")
@@ -389,6 +393,7 @@ async def test_trigger_slot(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
+    dut.disable_por.value = 0
 
     logger.info("Startup sequence...")
 
@@ -398,19 +403,19 @@ async def test_trigger_slot(dut):
     logger.info("Running the test...")
     
     # Wait for done
-    await FallingEdge(dut.config_busy_PAD)
+    await FallingEdge(dut.chip_top.i_chip_core.fabric_config_busy)
     await ClockCycles(dut.clk_PAD, 1)
 
     assert pcf.get("a").to_unsigned() == LogicArray.from_unsigned(0, len(pcf.get("a")))
 
     # Wait for done
-    await FallingEdge(dut.config_busy_PAD)
+    await FallingEdge(dut.chip_top.i_chip_core.fabric_config_busy)
     await ClockCycles(dut.clk_PAD, 1)
 
     assert pcf.get("a").to_unsigned() == LogicArray.from_signed(-1, len(pcf.get("a")))
 
     # Wait for done
-    await FallingEdge(dut.config_busy_PAD)
+    await FallingEdge(dut.chip_top.i_chip_core.fabric_config_busy)
     await ClockCycles(dut.clk_PAD, 1)
 
     assert pcf.get("a").to_unsigned() == LogicArray.from_unsigned(0, len(pcf.get("a")))
@@ -436,6 +441,7 @@ async def test_memory_init(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
+    dut.disable_por.value = 0
 
     logger.info("Startup sequence...")
 
@@ -445,7 +451,7 @@ async def test_memory_init(dut):
     logger.info("Running the test...")
     
     # Wait for done
-    await FallingEdge(dut.config_busy_PAD)
+    await FallingEdge(dut.chip_top.i_chip_core.fabric_config_busy)
     await ClockCycles(dut.clk_PAD, 10)
 
     clock1 = pcf.get_raw("clk1", "OUT")
