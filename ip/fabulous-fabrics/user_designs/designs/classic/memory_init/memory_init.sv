@@ -12,7 +12,7 @@ module memory_init #(
     input  wire [ADDR_BITS-1:0] addr,
     output wire [WORD_BITS-1:0] data_o
 );
-    logic [7:0] mem [2**ADDR_BITS];
+    logic [WORD_BITS-1:0] mem [2**ADDR_BITS];
     
     initial begin
         $readmemh("lorem_ipsum.hex", mem);

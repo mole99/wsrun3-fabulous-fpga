@@ -186,6 +186,18 @@ MACROS:
   #      location: [2617, 510]
   #      orientation: MX
 
+  gf180mcu_ocd_ip__por:
+    gds:
+      - dir::../ip/gf180mcu_ocd_ip__por/gds/gf180mcu_ocd_ip__por.gds.gz
+    lef:
+      - dir::../ip/gf180mcu_ocd_ip__por/lef/gf180mcu_ocd_ip__por.lef
+    vh:
+      - dir::../ip/gf180mcu_ocd_ip__por/verilog/gf180mcu_ocd_ip__por.vh
+    instances:  
+      i_chip_core.por_inst:
+        location: [3333, expr::(0.56*791)]
+        orientation: N
+
   classic_fabric_wsrun3:
     gds:
       - dir::../ip/fabulous-fabrics/fabrics/classic_fabric_wsrun3/macro/gf180mcuD/gds/classic_fabric_wsrun3.gds

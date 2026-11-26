@@ -87,7 +87,8 @@ PAD_WEST: [
     "vdd_pads\\[1\\].pad", # core domain
     "vss_pads\\[1\\].pad", # core domain
 
-    "config_busy_pad",
+    #"config_busy_pad",
+    "disable_por_pad",
     "fpga_mode_pad",
     "fpga_miso_pad",
     "fpga_mosi_pad",

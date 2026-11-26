@@ -1,3 +1,6 @@
 [submodule "ip/fabulous-tiles"]
 	path = ip/fabulous-tiles
 	url = ../../mole99/fabulous-tiles
+[submodule "ip/gf180mcu_ocd_ip__por"]
+	path = ip/gf180mcu_ocd_ip__por
+	url = ../../mole99/gf180mcu_ocd_ip__por.git

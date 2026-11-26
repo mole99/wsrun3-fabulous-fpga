@@ -21,9 +21,9 @@ sim = os.getenv("SIM", "icarus")
 gl = os.getenv("GL", False)
 pdk_root = os.getenv("PDK_ROOT", Path(__file__).resolve().parent / "../gf180mcu")
 pdk = os.getenv("PDK", "gf180mcuD")
-scl = os.getenv("SCL", "gf180mcu_fd_sc_mcu7t5v0")
-pad = os.getenv("PAD", "gf180mcu_fd_io")
-sram = os.getenv("SRAM", "gf180mcu_fd_ip_sram")
+scl = os.getenv("SCL", "gf180mcu_as_sc_mcu7t5v0")
+pad = os.getenv("PAD", "gf180mcu_ocd_io")
+sram = os.getenv("SRAM", "gf180mcu_ocd_ip_sram")
 slot = os.getenv("SLOT", "1x1")
 tile_library = os.getenv("TILE_LIBRARY", "classic")
 fabric = os.getenv("FABRIC", "classic_fabric_wsrun3")
@@ -519,7 +519,7 @@ def chip_top_runner():
         Path(pdk_root) / pdk / f"libs.ref/{sram}/verilog/{sram}__sram1024x8m8wm1.v",
         
         # PoR
-        proj_path / "../ip/simple_por/verilog/simple_por.v",
+        proj_path / "../ip/gf180mcu_ocd_ip__por/verilog/gf180mcu_ocd_ip__por.v",
         
         # Custom IP
         proj_path / "../ip/gf180mcu_ws_ip__logo/vh/gf180mcu_ws_ip__logo.v",

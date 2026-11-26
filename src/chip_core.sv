@@ -18,7 +18,8 @@ module chip_core #(
     // if mode == 0: SPI controller
     // if mode == 1: SPI receiver
     input  wire fpga_mode_i,
-    output wire config_busy_o,
+    //output wire config_busy_o,
+    input  wire disable_por_i,
     
     // FPGA config
     input  wire  fpga_sclk_i,
@@ -48,27 +49,28 @@ module chip_core #(
 );
 
     // Power-on-reset circuit
-    // TODO: at 3.3V it takes seconds...
-    /*wire porb, por, npor;
-    simple_por por_inst (
+    wire por_porb;
+    gf180mcu_ocd_ip__por por_inst (
     `ifdef USE_POWER_PINS
-        .VDD(VDD),
-        .VSS(VSS),
+        .vdd3v3 (VDD),
+        .vss    (VSS),
     `endif
-        .porb(porb),
-        .por(por)
+        .ena        (1'b1),     // amplifier enable;  tied to vdd3v3 in layout
+        .por        (),         // reset, active HIGH
+        .porb       (por_porb), // reset, active LOW
+        .por_unbuf  ()          // unbuffered por;  same polarity as por
     );
-    assign npor = porb;*/
+
+    // Combine external reset and PoR
+    wire rst_n_async;
+    assign rst_n_async = rst_n && (por_porb || disable_por_i);
 
     // Reset with asynchronous assertion and synchronous relase
     logic [1:0] rst_nd;
     logic rst_n_sync;
     
-    //wire rst_n_and_npor;
-    //assign rst_n_and_npor = rst_n && npor;
-    
-    always_ff @(posedge clk, negedge rst_n) begin
-        if (!rst_n) begin
+    always_ff @(posedge clk, negedge rst_n_async) begin
+        if (!rst_n_async) begin
             rst_nd <= '0;
         end else begin
             rst_nd[0] <= 1'b1;
@@ -132,8 +134,7 @@ module chip_core #(
     assign fpga_mode_sync = fpga_mode_d[1];
     
     // Config busy
-    wire spi_miso;
-    assign config_busy_o = fabric_config_busy;
+    //assign config_busy_o = fabric_config_busy;
     
     logic [31:0] spi_bitstream_data, spi_controller_bitstream_data_o, spi_receiver_bitstream_data_o;
     logic        spi_bitstream_valid, spi_controller_bitstream_valid_o, spi_receiver_bitstream_valid_o;
@@ -420,9 +421,6 @@ module chip_core #(
         // Fabric is configured
         .configured_i   (fabric_config_configured),
         .sys_reset_i    (fabric_config_busy),
-        
-        // Power on reset
-        //.npor_i (npor),
         
         // I/Os West
         .io_west_in_i  (fabric_io_west_in_i),

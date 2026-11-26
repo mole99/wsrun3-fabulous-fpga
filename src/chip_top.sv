@@ -55,7 +55,8 @@ module chip_top #(
     inout  wire rst_n_PAD,
     
     inout  wire fpga_mode_PAD,
-    inout  wire config_busy_PAD,
+    //inout  wire config_busy_PAD,
+    inout  wire disable_por_PAD,
     
     inout  wire fpga_sclk_PAD,
     inout  wire fpga_cs_n_PAD,
@@ -69,7 +70,8 @@ module chip_top #(
     wire rst_n_PAD2CORE;
     
     wire fpga_mode_PAD2CORE;
-    wire config_busy_CORE2PAD;
+    //wire config_busy_CORE2PAD;
+    wire disable_por_PAD2CORE;
     
     wire fpga_sclk_PAD2CORE;
     wire fpga_sclk_CORE2PAD;
@@ -202,8 +204,23 @@ module chip_top #(
         .PU     (1'b0),
         .PD     (1'b0)
     );
+    
+    `gf180mcu_xxx_io__in_c disable_por_pad (
+        `ifdef USE_POWER_PINS
+        .DVDD   (DVDD),
+        .DVSS   (DVSS),
+        .VDD    (VDD),
+        .VSS    (VSS),
+        `endif
+    
+        .Y      (disable_por_PAD2CORE),
+        .PAD    (disable_por_PAD),
+        
+        .PU     (1'b0),
+        .PD     (1'b0)
+    );
 
-    `gf180mcu_xxx_io__bi_24t config_busy_pad (
+    /*`gf180mcu_xxx_io__bi_24t config_busy_pad (
         `ifdef USE_POWER_PINS
         .DVDD   (DVDD),
         .DVSS   (DVSS),
@@ -222,7 +239,7 @@ module chip_top #(
 
         .PU     (1'b0),
         .PD     (1'b0)
-    );
+    );*/
 
     `gf180mcu_xxx_io__bi_24t fpga_sclk_pad (
         `ifdef USE_POWER_PINS
@@ -348,7 +365,8 @@ module chip_top #(
         .rst_n      (rst_n_PAD2CORE),
         
         .fpga_mode_i    (fpga_mode_PAD2CORE),
-        .config_busy_o  (config_busy_CORE2PAD),
+        //.config_busy_o  (config_busy_CORE2PAD),
+        .disable_por_i  (disable_por_PAD2CORE),
 
         .fpga_sclk_i    (fpga_sclk_PAD2CORE),
         .fpga_sclk_o    (fpga_sclk_CORE2PAD),
