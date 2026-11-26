@@ -219,7 +219,7 @@ class PCF:
 
 async def set_defaults(dut):
     dut.fpga_mode_PAD.value = 0
-    dut.disable_por.value = 0
+    dut.disable_por_PAD.value = 0
 
 async def enable_power(dut):
     dut.VDD.value = 1
@@ -271,7 +271,7 @@ async def test_all_ones(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
-    dut.disable_por.value = 0
+    dut.disable_por_PAD.value = 0
 
     logger.info("Startup sequence...")
 
@@ -309,7 +309,7 @@ async def test_all_zeros(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
-    dut.disable_por.value = 0
+    dut.disable_por_PAD.value = 0
 
     logger.info("Startup sequence...")
 
@@ -347,7 +347,7 @@ async def test_counter_top(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
-    dut.disable_por.value = 0
+    dut.disable_por_PAD.value = 0
 
     logger.info("Startup sequence...")
 
@@ -393,7 +393,7 @@ async def test_trigger_slot(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
-    dut.disable_por.value = 0
+    dut.disable_por_PAD.value = 0
 
     logger.info("Startup sequence...")
 
@@ -441,7 +441,7 @@ async def test_memory_init(dut):
     # if mode == 0: SPI controller
     # if mode == 1: SPI receiver
     dut.fpga_mode_PAD.value = 0
-    dut.disable_por.value = 0
+    dut.disable_por_PAD.value = 0
 
     logger.info("Startup sequence...")
 
